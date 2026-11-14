@@ -138,8 +138,21 @@ header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;backgroun
 .contact-card .big-wa{width:100%;max-width:420px;min-height:60px;font-size:17px}
 .small{font-size:13px;color:var(--muted-dark)}
 
-footer{background:#0f0d08;color:#9f998b;font-size:12.5px;border-top:1px solid rgba(255,255,255,.07)}
-footer .wrap{padding-block:22px 90px;display:grid;gap:6px}
+footer.site-foot{position:relative;overflow:hidden;color:#bdb7a8;font-size:13px;text-align:center;background:radial-gradient(520px 200px at 50% 0%,rgba(242,194,48,.12),transparent 70%),linear-gradient(180deg,#16140d,#0c0b07)}
+footer.site-foot::before{content:"";position:absolute;top:0;left:50%;transform:translateX(-50%);width:min(560px,80%);height:1px;background:linear-gradient(90deg,transparent,rgba(242,194,48,.75),transparent)}
+footer.site-foot .wrap{padding-block:40px calc(96px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;align-items:center;gap:16px}
+.foot-logo svg{height:28px;width:auto;aspect-ratio:5.418;display:block;opacity:.95}
+.foot-pro{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:6px 10px;letter-spacing:.02em}
+.foot-pro b{color:#fff;font-weight:700}
+.foot-pro .dot{width:4px;height:4px;border-radius:50%;background:var(--sun)}
+@media (max-width:480px){.foot-pro{flex-direction:column;gap:2px}.foot-pro .dot{display:none}}
+.foot-links{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
+.foot-links button{padding:9px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.04);color:#e9e5da;font:600 12.5px var(--body);cursor:pointer;backdrop-filter:blur(8px);transition:border-color .15s ease,background .15s ease}
+.foot-links button:hover{border-color:rgba(242,194,48,.6);background:rgba(255,255,255,.08)}
+.foot-copy{font-size:11.5px;letter-spacing:.06em;color:rgba(255,255,255,.4)}
+.sheet .policy{margin-top:12px;font-size:14.5px;line-height:1.6;color:#3d382c}
+.sheet .policy b{color:var(--ink)}
+.sheet .policy-date{margin-top:14px;font-size:12px;color:var(--muted)}
 
 /* Folha (detalhe ao tocar) */
 .sheet-bg{position:fixed;inset:0;z-index:80;background:rgba(10,9,6,.55);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);display:flex;align-items:flex-end;justify-content:center;animation:fade .2s ease}
@@ -765,10 +778,16 @@ main,footer{margin-left:var(--side-w)}
   </section>
 </main>
 
-<footer>
+<footer class="site-foot">
   <div class="wrap">
-    <p><strong style="color:#fff">Fortal Óculos</strong> · Optometrista responsável: Waldy Filho · Registro: CBOO 06.01386-1</p>
-    <p>O exame optométrico não substitui a consulta oftalmológica para diagnóstico e tratamento de doenças oculares.</p>
+    <a class="foot-logo" href="#inicio" aria-label="Fortal Óculos, início"><svg viewBox="0 0 1994 368" role="img" aria-label="Fortal Óculos"><use href="#logo-full"/></svg></a>
+    <p class="foot-pro"><span>Optometrista responsável <b>Waldy Filho</b></span><span class="dot"></span><span>CBOO 06.01386-1</span></p>
+    <div class="foot-links">
+      <button type="button" data-open="pol-priv">Política de Privacidade</button>
+      <button type="button" data-open="pol-termos">Termos de Uso</button>
+      <button type="button" data-open="pol-cookies">Política de Cookies</button>
+    </div>
+    <p class="foot-copy">© 2026 Fortal Óculos · Fortaleza e Região Metropolitana</p>
   </div>
 </footer>
 
@@ -781,6 +800,24 @@ main,footer{margin-left:var(--side-w)}
 <script>
 (function(){
   var C = {
+    'pol-priv':{icon:'lock',title:'Política de Privacidade',paras:[
+      ['Quem somos','Fortal Óculos, sob responsabilidade do optometrista Waldy Filho (CBOO 06.01386-1). Contato pelo WhatsApp (85) 98133-3540.'],
+      ['Dados que tratamos','Este site não tem formulários e não coleta dados por conta própria. Tratamos os dados que você envia pelo WhatsApp (nome, telefone e mensagens) e, no atendimento, os dados do exame e da receita.'],
+      ['Para que usamos','Agendar e realizar o atendimento, emitir a receita, produzir e entregar óculos e lentes, e prestar pós-venda. Lembretes e novidades só são enviados com a sua autorização.'],
+      ['Base legal','Dados de saúde são tratados para a tutela da saúde, em procedimento realizado por profissional de saúde (LGPD, art. 11, II, f). Comunicações de relacionamento dependem do seu consentimento.'],
+      ['Compartilhamento','Não vendemos dados. O laboratório recebe apenas o necessário para confeccionar os óculos. Em ações em empresas, a empresa recebe somente números gerais, nunca dados individuais de saúde.'],
+      ['Seus direitos','Você pode pedir acesso, correção, exclusão dos seus dados ou revogar autorizações a qualquer momento pelo WhatsApp.']],
+      date:'Atualizada em 14/11/2026',wa:'Olá! Tenho uma solicitação sobre meus dados pessoais.'},
+    'pol-termos':{icon:'doc',title:'Termos de Uso',paras:[
+      ['Conteúdo do site','As informações deste site apresentam os serviços e produtos da Fortal Óculos e podem ser atualizadas sem aviso.'],
+      ['Agendamentos','Datas, horários, valores e disponibilidade são confirmados no atendimento pelo WhatsApp.'],
+      ['Receita','A receita é entregue ao paciente em todos os atendimentos. A compra de óculos ou lentes é sempre opcional.'],
+      ['Marca e imagens','A marca Fortal Óculos, a logo e o conteúdo do site não podem ser usados sem autorização.']],
+      date:'Atualizados em 14/11/2026',wa:'Olá! Tenho uma dúvida sobre os termos do site.'},
+    'pol-cookies':{icon:'check',title:'Política de Cookies',paras:[
+      ['Sem rastreamento','Este site não usa cookies de publicidade nem ferramentas de rastreamento de visitantes.'],
+      ['Links externos','Os botões do WhatsApp levam a um serviço da Meta, que segue a própria política de privacidade.']],
+      date:'Atualizada em 14/11/2026',wa:'Olá! Tenho uma dúvida sobre privacidade no site.'},
     exame:{icon:'eye',title:'Exame de vista',pts:[['eye','Mede o seu grau'],['doc','Receita na hora'],['screen','Orientação para telas']],
       note:'Doença nos olhos é com o oftalmologista. Encaminhamos quando necessário.',wa:'Olá! Gostaria de informações sobre o exame de vista.'},
     oculos:{icon:'glasses',title:'Óculos de grau',pts:[['glasses','Armações variadas'],['doc','Feitos com a sua receita'],['tool','Ajuste depois da entrega']],
@@ -824,6 +861,7 @@ main,footer{margin-left:var(--side-w)}
     var d=C[key]; if(!d) return; last=trigger;
     var h='<div class="grab"></div><div class="sheet-head"><span class="ill">'+ic(d.icon)+'</span><h3 id="sheetTitle">'+esc(d.title)+'</h3><button class="close" aria-label="Fechar">×</button></div>';
     if(d.answer) h+='<p class="answer">'+esc(d.answer)+'</p>';
+    if(d.paras) h+=d.paras.map(function(p){return '<p class="policy"><b>'+esc(p[0])+'.</b> '+esc(p[1])+'</p>';}).join('')+(d.date?'<p class="policy-date">'+esc(d.date)+'</p>':'');
     if(d.lead) h+='<p class="answer" style="font-size:15px;color:var(--muted)">'+esc(d.lead)+'</p>';
     if(d.pts) h+='<ul class="points">'+d.pts.map(function(p){return '<li><i>'+ic(p[0])+'</i>'+esc(p[1])+'</li>';}).join('')+'</ul>';
     if(d.note) h+='<p class="s-note">'+ic('alert')+'<span>'+esc(d.note)+'</span></p>';
