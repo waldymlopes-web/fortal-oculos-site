@@ -1,0 +1,863 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#16140d">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%2227%2027%201200%201200%22%20width%3D%221200%22%20height%3D%221200%22%3E%20%20%3Ctitle%3EFortal%20%C3%93culos%3C/title%3E%20%20%3Ccircle%20cx%3D%22627%22%20cy%3D%22627%22%20r%3D%22598%22%20fill%3D%22%2316140d%22/%3E%20%20%3Ccircle%20cx%3D%22627%22%20cy%3D%22627%22%20r%3D%22560%22%20fill%3D%22none%22%20stroke%3D%22%23f2c230%22%20stroke-width%3D%2226%22/%3E%20%20%3Cpath%20d%3D%22M318%20306H735Q760%20308%20760%20332V378L376%20366Z%20M383%20428H438L477%20740H410Z%20M486%20498H645L618%20548H486Z%22%20fill%3D%22%23ffffff%22/%3E%20%20%3Cpath%20d%3D%22M820%20340V420A233%20233%200%200%201%20905%20600A233%20233%200%200%201%20552%20800H449A300%20300%200%200%200%20972%20600A300%20300%200%200%200%20820%20340Z%22%20fill%3D%22%23f2c230%22/%3E%3C/svg%3E">
+<meta property="og:title" content="Fortal Óculos">
+<meta property="og:description" content="Especialista em exame de vista e óculos de grau. Fortaleza e Região Metropolitana.">
+<meta property="og:type" content="website">
+<style>html{-webkit-text-size-adjust:100%}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Fortal Óculos</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Fortal Óculos: exame de vista com optometrista, óculos, lentes, lentes de contato, atendimento em casa, em empresas e em óticas parceiras. Fortaleza e Região Metropolitana.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400..700&family=Manrope:wght@400..800&family=Saira:wght@500;600&display=swap">
+<style>
+/* Layout: celular primeiro. Abertura = grade de botões com ícones (o que você procura) + chips de dúvidas; cada toque abre uma folha curta. Marca em marca d'água; vidro e dourado como acabamento. */
+:root{
+  --ink:#16140d; --paper:#fbfaf6; --sun:#f2c230; --sun-text:#9c7a08;
+  --muted:#5f5a4d; --muted-dark:#bdb7a8; --line:#e8e3d5; --wa:#25a35a;
+  --display:"Unbounded","Saira",system-ui,sans-serif;
+  --body:"Manrope","Segoe UI",system-ui,-apple-system,sans-serif;
+  --gold:linear-gradient(100deg,#fff3c4 0%,#f6cf4a 26%,#f2c230 46%,#c4960a 72%,#ffe48a 100%);
+  --glass-white:linear-gradient(180deg,#fff 0%,#f4efe2 50%,rgba(255,255,255,.6) 100%);
+  --glass-ink:linear-gradient(180deg,#16140d 0%,#2e2a1f 62%,#7a6420 100%);
+  --mark-light:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='70 70 1114 1114'%3E%3Ccircle cx='627' cy='627' r='545' fill='none' stroke='%23f2c230' stroke-width='12'/%3E%3Cpath d='M318 306H735Q760 308 760 332V378L376 366Z M383 428H438L477 740H410Z M486 498H645L618 548H486Z' fill='%23ffffff'/%3E%3Cpath d='M820 340V420A233 233 0 0 1 905 600A233 233 0 0 1 552 800H449A300 300 0 0 0 972 600A300 300 0 0 0 820 340Z' fill='%23f2c230'/%3E%3C/svg%3E");
+  --mark-dark:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='70 70 1114 1114'%3E%3Ccircle cx='627' cy='627' r='545' fill='none' stroke='%23d9a90f' stroke-width='12'/%3E%3Cpath d='M318 306H735Q760 308 760 332V378L376 366Z M383 428H438L477 740H410Z M486 498H645L618 548H486Z' fill='%2316140d'/%3E%3Cpath d='M820 340V420A233 233 0 0 1 905 600A233 233 0 0 1 552 800H449A300 300 0 0 0 972 600A300 300 0 0 0 820 340Z' fill='%23d9a90f'/%3E%3C/svg%3E");
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--ink)}
+h1,h2,h3{font-family:var(--display);margin:0;line-height:1.1;letter-spacing:-.03em;text-wrap:balance}
+p{margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:10px}
+.wrap{position:relative;z-index:1;max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.gold{background:var(--gold);background-size:220% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 8s ease-in-out infinite}
+@keyframes shine{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+
+/* Faixas */
+.band{position:relative;overflow:hidden;padding-block:clamp(48px,8vw,96px)}
+.dark{color:#f3f0e7;background:radial-gradient(700px 480px at 90% 8%,rgba(242,194,48,.22),transparent 62%),radial-gradient(560px 420px at 0% 100%,rgba(242,194,48,.10),transparent 60%),linear-gradient(165deg,#1f1b13,#110f08)}
+.dark::after{content:"";position:absolute;width:min(680px,120vw);aspect-ratio:1;right:-30%;top:-6%;background:var(--mark-light) center/contain no-repeat;opacity:.065;pointer-events:none}
+.light{background:radial-gradient(760px 460px at 100% 0%,rgba(242,194,48,.20),transparent 60%),radial-gradient(620px 420px at 0% 100%,rgba(242,194,48,.10),transparent 62%),linear-gradient(180deg,#fcfbf7,#f2eee2)}
+.light::after{content:"";position:absolute;width:min(620px,110vw);aspect-ratio:1;left:-28%;bottom:-24%;background:var(--mark-dark) center/contain no-repeat;opacity:.05;pointer-events:none}
+.sec-title{font-size:clamp(24px,4vw,40px);font-weight:600}
+.dark .sec-title{background:var(--glass-white);-webkit-background-clip:text;background-clip:text;color:transparent}
+.light .sec-title{background:var(--glass-ink);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{margin-top:8px;color:var(--muted);font-size:15.5px}
+.dark .sub{color:var(--muted-dark)}
+
+/* Cabeçalho */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:rgba(22,20,13,.82);backdrop-filter:saturate(140%) blur(14px);-webkit-backdrop-filter:saturate(140%) blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:62px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff}
+.brand svg{width:36px;height:36px}
+.brand b{font-family:var(--display);font-weight:600;font-size:16px;letter-spacing:-.02em}
+.top .cta{display:inline-flex;align-items:center;gap:8px;min-height:40px;padding:0 14px;border-radius:999px;text-decoration:none;font-weight:700;font-size:14px;color:#16140d;background:linear-gradient(180deg,#ffe58a,#f2c230 55%,#d6a50c);box-shadow:inset 0 1px 0 rgba(255,255,255,.7)}
+.top .cta svg{width:17px;height:17px}
+
+/* Abertura */
+.hero{padding-block:28px 40px}
+.hero h1{font-size:clamp(28px,6.4vw,58px);font-weight:600;background:var(--glass-white);-webkit-background-clip:text;background-clip:text;color:transparent;filter:drop-shadow(0 16px 30px rgba(0,0,0,.45))}
+.hero h1 .gold{font-weight:700}
+.hero .sub{margin-top:10px;font-size:15px}
+.ask{margin-top:26px;font-family:var(--display);font-size:13px;font-weight:500;letter-spacing:.02em;color:var(--sun)}
+
+/* Grade de opções */
+.tiles{margin-top:12px;display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media (min-width:720px){.tiles{grid-template-columns:repeat(3,1fr);gap:14px}}
+.group-head{margin-top:26px;display:flex;align-items:center;gap:14px}
+.group-head .ask{margin:0;text-transform:uppercase;letter-spacing:.2em;font-size:12px}
+.group-line{flex:1;height:1px;background:linear-gradient(90deg,rgba(242,194,48,.55),transparent)}
+.tiles.products{grid-template-columns:repeat(3,1fr)}
+.tile.prod .ill{background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.55),transparent 60%),linear-gradient(160deg,#ffffff,#e9e3d3);box-shadow:0 8px 18px -8px rgba(255,255,255,.35)}
+@media (max-width:719px){.tiles.products .tile{min-height:0;padding:14px 10px;align-items:center;text-align:center;font-size:13.5px}.tiles.products .tile small{display:none}}
+.tile{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:16px 14px 14px;min-height:118px;border-radius:20px;text-align:left;cursor:pointer;color:#fff;font:600 15px/1.25 var(--body);background:linear-gradient(160deg,rgba(255,255,255,.10),rgba(255,255,255,.03));border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:inset 0 1px 0 rgba(255,255,255,.14),0 20px 40px -30px rgba(0,0,0,.8);transition:transform .18s ease,border-color .18s ease}
+.tile:hover,.tile:active{transform:translateY(-2px);border-color:rgba(242,194,48,.65)}
+.tile .ill{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.35),transparent 60%),var(--gold);color:#16140d;box-shadow:0 8px 18px -8px rgba(242,194,48,.7)}
+.tile .ill svg{width:26px;height:26px}
+.tile small{display:block;font-weight:500;font-size:12.5px;color:var(--muted-dark);margin-top:2px}
+.tile.b2b{background:linear-gradient(160deg,rgba(242,194,48,.16),rgba(242,194,48,.04));border-color:rgba(242,194,48,.35)}
+.tile.b2b .ill{background:#16140d;color:var(--sun);border:1px solid rgba(242,194,48,.5);box-shadow:none}
+
+/* Chips de dúvidas */
+.chips{margin-top:22px;display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);color:#f1ede3;font:600 14px var(--body);cursor:pointer;backdrop-filter:blur(8px);transition:border-color .15s ease,background .15s ease}
+.chip::before{content:"?";display:grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--sun);color:#16140d;font-weight:800;font-size:12px}
+.chip:hover{border-color:var(--sun);background:rgba(255,255,255,.1)}
+
+/* Do exame aos óculos */
+.flow{margin-top:26px;display:grid;grid-template-columns:repeat(3,1fr);gap:10px;align-items:start}
+.step{text-align:center}
+.step .big{margin:0 auto;width:clamp(72px,18vw,112px);aspect-ratio:1;border-radius:50%;display:grid;place-items:center;background:linear-gradient(160deg,#fff,rgba(255,255,255,.7));box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(22,20,13,.07),0 24px 40px -26px rgba(22,20,13,.55);position:relative}
+.step .big svg{width:48%;height:48%}
+.step .n{position:absolute;top:-2px;right:-2px;width:26px;height:26px;border-radius:50%;background:var(--ink);color:var(--sun);font:700 12px var(--display);display:grid;place-items:center}
+.step b{display:block;margin-top:12px;font-family:var(--display);font-weight:500;font-size:clamp(13px,2.4vw,17px);letter-spacing:-.02em}
+.step span{display:block;font-size:13px;color:var(--muted)}
+.flow-note{margin-top:22px;display:flex;align-items:center;gap:10px;justify-content:center;font-size:14px;color:var(--muted);text-align:center}
+.flow-note svg{width:20px;height:20px;flex:none;color:var(--sun-text)}
+
+/* Empresas */
+.b2b-steps{margin-top:24px;display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+@media (max-width:640px){.b2b-steps{grid-template-columns:repeat(2,1fr)}}
+.bs{padding:16px 14px;border-radius:18px;background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.12);box-shadow:inset 0 1px 0 rgba(255,255,255,.12)}
+.bs i{display:grid;place-items:center;width:42px;height:42px;border-radius:12px;background:rgba(242,194,48,.14);color:var(--sun);border:1px solid rgba(242,194,48,.35)}
+.bs i svg{width:22px;height:22px}
+.bs b{display:block;margin-top:12px;font-family:var(--display);font-weight:500;font-size:14px;letter-spacing:-.02em;color:#fff}
+.bs span{display:block;margin-top:4px;font-size:13px;color:var(--muted-dark)}
+.promise{margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+.promise span{display:inline-flex;align-items:center;gap:8px;padding:9px 13px;border-radius:999px;border:1px solid rgba(242,194,48,.35);font-size:13.5px;font-weight:600;color:#f1ede3}
+.promise svg{width:16px;height:16px;color:var(--sun)}
+
+/* Óticas */
+.partner{margin-top:22px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center;padding:18px;border-radius:22px;background:linear-gradient(160deg,#fff,rgba(255,255,255,.75));box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(22,20,13,.06),0 28px 50px -36px rgba(22,20,13,.5)}
+.partner .ill{width:64px;height:64px;border-radius:18px;display:grid;place-items:center;background:var(--gold)}
+.partner .ill svg{width:34px;height:34px}
+.partner b{font-family:var(--display);font-weight:500;font-size:16px;letter-spacing:-.02em}
+.cities{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.cities span{padding:5px 11px;border-radius:999px;background:#16140d;color:#fff;font-size:12.5px;font-weight:600}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 22px;border-radius:999px;font:700 16px var(--body);text-decoration:none;border:1px solid transparent;cursor:pointer;transition:transform .15s ease}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:20px;height:20px}
+.btn-gold{background:linear-gradient(180deg,#ffe58a,#f2c230 55%,#d6a50c);color:#16140d;box-shadow:inset 0 1px 0 rgba(255,255,255,.7),0 14px 30px -14px rgba(242,194,48,.6)}
+.btn-ink{background:linear-gradient(180deg,#2c281e,#16140d);color:#fff;border-color:rgba(242,194,48,.38);box-shadow:inset 0 1px 0 rgba(255,255,255,.14)}
+.btn-ink .wa-i{color:#5fd38b}
+.row-btns{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+
+/* Contato */
+.contact-card{display:grid;gap:14px;justify-items:start}
+.contact-card .big-wa{width:100%;max-width:420px;min-height:60px;font-size:17px}
+.small{font-size:13px;color:var(--muted-dark)}
+
+footer{background:#0f0d08;color:#9f998b;font-size:12.5px;border-top:1px solid rgba(255,255,255,.07)}
+footer .wrap{padding-block:22px 90px;display:grid;gap:6px}
+
+/* Folha (detalhe ao tocar) */
+.sheet-bg{position:fixed;inset:0;z-index:80;background:rgba(10,9,6,.55);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);display:flex;align-items:flex-end;justify-content:center;animation:fade .2s ease}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+[hidden],.sheet-bg[hidden]{display:none!important}
+.sheet{width:100%;max-width:560px;max-height:88vh;overflow:auto;background:linear-gradient(170deg,#ffffff,#f7f3e8);border-radius:26px 26px 0 0;padding:14px max(20px,env(safe-area-inset-right,0px)) calc(24px + env(safe-area-inset-bottom,0px)) max(20px,env(safe-area-inset-left,0px));box-shadow:0 -20px 60px -20px rgba(0,0,0,.5);animation:up .28s cubic-bezier(.2,.8,.2,1)}
+@keyframes up{from{transform:translateY(40px);opacity:.6}to{transform:none;opacity:1}}
+@media (min-width:720px){.sheet-bg{align-items:center}.sheet{border-radius:26px}}
+.grab{width:44px;height:5px;border-radius:5px;background:#d9d3c2;margin:0 auto 14px}
+.sheet-head{display:flex;align-items:center;gap:14px}
+.sheet-head .ill{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.4),transparent 60%),var(--gold);flex:none;box-shadow:0 10px 20px -10px rgba(242,194,48,.8)}
+.sheet-head .ill svg{width:30px;height:30px;color:#16140d}
+.sheet h3{font-size:21px;font-weight:600;background:var(--glass-ink);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sheet .close{margin-left:auto;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:#fff;cursor:pointer;font-size:20px;line-height:1;color:var(--ink)}
+.points{list-style:none;padding:0;margin:18px 0 0;display:grid;gap:8px}
+.points li{display:flex;align-items:center;gap:12px;padding:12px 14px;border-radius:14px;background:#fff;border:1px solid var(--line);font-weight:600;font-size:15px}
+.points li i{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:rgba(242,194,48,.18);flex:none}
+.points li i svg{width:19px;height:19px}
+.answer{margin-top:16px;font-size:17px;line-height:1.5;font-weight:500}
+.s-note{margin-top:14px;display:flex;gap:10px;align-items:flex-start;font-size:13.5px;color:var(--muted);padding:12px 14px;border-radius:12px;background:rgba(242,194,48,.10)}
+.s-note svg{width:18px;height:18px;flex:none;margin-top:2px;color:var(--sun-text)}
+.sheet .btn{width:100%;margin-top:18px}
+
+/* WhatsApp flutuante */
+.wa-float{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:70;display:grid;place-items:center;width:58px;height:58px;border-radius:50%;background:var(--wa);color:#fff;box-shadow:0 14px 30px -10px rgba(0,0,0,.55),inset 0 1px 0 rgba(255,255,255,.3)}
+.wa-float svg{width:30px;height:30px}
+
+/* Logo */
+.brand svg{width:auto;height:30px;aspect-ratio:5.418;display:block}
+.hero-mark{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;padding:clamp(18px,4vw,40px) 0 clamp(6px,2vw,14px)}
+.hero-mark::before{content:"";position:absolute;left:50%;top:50%;width:min(720px,110vw);height:240px;transform:translate(-50%,-55%);background:radial-gradient(closest-side,rgba(242,194,48,.20),rgba(242,194,48,.06) 55%,transparent);filter:blur(10px);pointer-events:none}
+.hero-mark h1{position:relative;margin:0;line-height:0;background:none;filter:none}
+.hero-mark h1 svg{width:min(560px,86vw);height:auto;aspect-ratio:5.418;filter:drop-shadow(0 18px 34px rgba(0,0,0,.55)) drop-shadow(0 0 1px rgba(255,255,255,.2))}
+.claim{position:relative;margin-top:22px;font-family:var(--display);font-weight:500;font-size:clamp(17px,2.6vw,26px);line-height:1.25;letter-spacing:-.02em;text-wrap:balance;background:var(--glass-white);-webkit-background-clip:text;background-clip:text;color:transparent}
+.claim .gold{font-weight:600}
+.tagline{position:relative;margin-top:14px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px 14px;font-size:11.5px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:#cfc8b6}
+.tagline i{width:28px;height:1px;background:linear-gradient(90deg,transparent,#f2c230,transparent)}
+@media (max-width:420px){.tagline i{display:none}.tagline{flex-direction:column;gap:4px}}
+
+/* Opções recolhíveis */
+.accs{margin-top:28px;display:grid;gap:10px;max-width:760px;margin-left:auto;margin-right:auto}
+.acc{border-radius:20px;background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.025));border:1px solid rgba(255,255,255,.13);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:inset 0 1px 0 rgba(255,255,255,.13),0 20px 40px -32px rgba(0,0,0,.8);transition:border-color .2s ease}
+.acc[open]{border-color:rgba(242,194,48,.45)}
+.acc summary{list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:14px 16px;color:#fff}
+.acc summary::-webkit-details-marker{display:none}
+.ai{width:42px;height:42px;border-radius:13px;display:grid;place-items:center;flex:none;background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.35),transparent 60%),var(--gold);color:#16140d;box-shadow:0 8px 18px -8px rgba(242,194,48,.7)}
+.ai svg{width:22px;height:22px}
+.at{flex:1;font-family:var(--display);font-weight:500;font-size:16px;letter-spacing:-.02em}
+.at small{display:block;font-family:var(--body);font-weight:500;font-size:12.5px;letter-spacing:0;color:var(--muted-dark);margin-top:2px}
+.chev{width:30px;height:30px;border-radius:50%;border:1px solid rgba(255,255,255,.18);position:relative;flex:none;transition:transform .25s ease,background .2s ease}
+.chev::before{content:"";position:absolute;left:50%;top:45%;width:8px;height:8px;border-right:2px solid var(--sun);border-bottom:2px solid var(--sun);transform:translate(-50%,-50%) rotate(45deg)}
+.acc[open] .chev{transform:rotate(180deg);background:rgba(242,194,48,.12)}
+.opts{display:grid;gap:6px;padding:0 10px 12px;animation:drop .25s ease}
+@keyframes drop{from{opacity:0;transform:translateY(-4px)}to{opacity:1;transform:none}}
+@media (min-width:720px){.opts{grid-template-columns:1fr 1fr}}
+.opt{display:flex;align-items:center;gap:12px;width:100%;text-align:left;padding:10px 12px;border-radius:14px;border:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.04);color:#f3f0e7;font:600 14.5px/1.3 var(--body);cursor:pointer;transition:background .15s ease,border-color .15s ease}
+.opt:hover{background:rgba(255,255,255,.08);border-color:rgba(242,194,48,.45)}
+.oi{width:34px;height:34px;border-radius:10px;display:grid;place-items:center;flex:none;background:rgba(242,194,48,.14);color:var(--sun);border:1px solid rgba(242,194,48,.3)}
+.oi svg{width:18px;height:18px}
+.opt.prod .oi{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.25)}
+.ot{flex:1;min-width:0}
+.ot small{display:block;font-weight:500;font-size:12px;color:var(--muted-dark)}
+.oa{color:var(--sun);font-size:22px;line-height:1}
+
+/* Recolhíveis em fundo claro */
+.light-accs{margin-left:0;margin-right:0}
+.light .acc{background:linear-gradient(160deg,#fff,rgba(255,255,255,.75));border-color:rgba(255,255,255,.95);box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(22,20,13,.07),0 28px 50px -38px rgba(22,20,13,.5)}
+.light .acc[open]{box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(201,151,10,.45),0 28px 50px -38px rgba(22,20,13,.5)}
+.light .acc summary{color:var(--ink)}
+.light .at small{color:var(--muted)}
+.light .chev{border-color:var(--line)}
+.light .chev::before{border-color:var(--sun-text)}
+.light .opt{background:#fff;border-color:var(--line);color:var(--ink)}
+.light .ot small{color:var(--muted)}
+.light .oi{background:rgba(242,194,48,.16);color:var(--ink);border-color:rgba(201,151,10,.3)}
+.opt.static{cursor:default}
+.opt.static:hover{border-color:var(--line)}
+.opts.one{grid-template-columns:1fr}
+.opts .cities{margin:0;padding:2px 4px}
+.cities span::before{content:"\1F4CD";margin-right:5px;font-size:.95em}
+
+/* Do exame aos óculos: faixa compacta */
+.journey{position:relative;padding-block:clamp(28px,5vw,48px);background:linear-gradient(180deg,#110f08 0%,#16140d 50%,#110f08 100%)}
+.j-card{position:relative;max-width:760px;margin:0 auto;padding:22px clamp(16px,4vw,36px) 18px;border-radius:24px;background:linear-gradient(160deg,rgba(255,255,255,.07),rgba(255,255,255,.015));border:1px solid rgba(242,194,48,.22);box-shadow:inset 0 1px 0 rgba(255,255,255,.1),0 30px 60px -40px rgba(0,0,0,.9)}
+.j-card::before{content:"";position:absolute;inset:-1px;border-radius:24px;padding:1px;background:linear-gradient(120deg,rgba(242,194,48,.6),transparent 35%,transparent 65%,rgba(242,194,48,.5));-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none}
+.j-title{display:flex;align-items:center;justify-content:center;gap:12px;font-size:11px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--sun)}
+.j-title span{width:34px;height:1px;background:linear-gradient(90deg,transparent,rgba(242,194,48,.8))}
+.j-title span:last-child{transform:scaleX(-1)}
+.j-steps{list-style:none;margin:20px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);position:relative}
+.j-steps::before{content:"";position:absolute;top:21px;left:16.66%;right:16.66%;height:1px;background:linear-gradient(90deg,rgba(242,194,48,.15),rgba(242,194,48,.85) 50%,rgba(242,194,48,.15))}
+.j-steps li{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;gap:4px}
+.j-dot{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;color:var(--sun);background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.18),transparent 60%),#1b1810;box-shadow:0 0 0 1px rgba(242,194,48,.55),0 0 0 5px rgba(242,194,48,.07),0 10px 22px -10px rgba(242,194,48,.5);margin-bottom:8px}
+.j-dot svg{width:20px;height:20px}
+.j-steps b{font-family:var(--display);font-weight:500;font-size:14.5px;letter-spacing:-.02em;color:#fff}
+.j-steps small{font-size:12px;color:var(--muted-dark);letter-spacing:.02em}
+.j-steps li:nth-child(2) .j-dot{background:radial-gradient(circle at 30% 25%,rgba(255,255,255,.45),transparent 60%),var(--gold);color:#16140d}
+.j-note{margin-top:16px;padding-top:12px;border-top:1px solid rgba(255,255,255,.07);text-align:center;font-size:11.5px;color:rgba(255,255,255,.45);letter-spacing:.02em}
+
+.ai.thumb{width:56px;height:56px;border-radius:16px;overflow:hidden;background:none;box-shadow:0 0 0 1px rgba(242,194,48,.35),0 12px 24px -12px rgba(0,0,0,.8),0 8px 20px -12px rgba(242,194,48,.45)}
+.ai.thumb svg{width:100%;height:100%;display:block}
+
+/* ===== Estrutura: menu lateral + telas ===== */
+:root{--side-w:272px}
+.view[hidden]{display:none!important}
+.side{position:fixed;top:0;bottom:0;left:0;z-index:90;width:var(--side-w);display:flex;flex-direction:column;gap:18px;padding:calc(20px + env(safe-area-inset-top,0px)) 16px calc(20px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));background:linear-gradient(180deg,rgba(28,25,17,.96),rgba(14,12,7,.98));border-right:1px solid rgba(242,194,48,.18);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);overflow-y:auto}
+.side-top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:4px 6px 14px;border-bottom:1px solid rgba(255,255,255,.07)}
+.side-brand svg{height:30px;width:auto;aspect-ratio:5.418;display:block}
+.side-close{display:none;width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.18);background:transparent;color:#fff;font-size:20px;cursor:pointer}
+.side-nav{display:flex;flex-direction:column;gap:3px}
+.side-label{margin:14px 10px 6px;font-size:10.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:rgba(242,194,48,.75)}
+.side-label:first-child{margin-top:4px}
+.side-nav a{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:12px;text-decoration:none;color:#d9d4c6;font-weight:600;font-size:14.5px;border:1px solid transparent;transition:background .15s ease,color .15s ease,border-color .15s ease}
+.side-nav a svg{width:19px;height:19px;color:rgba(242,194,48,.85);flex:none}
+.side-nav a:hover{background:rgba(255,255,255,.05);color:#fff}
+.side-nav a[aria-current="page"]{background:linear-gradient(160deg,rgba(242,194,48,.16),rgba(242,194,48,.04));border-color:rgba(242,194,48,.35);color:#fff}
+.side-wa{margin-top:auto;min-height:48px}
+.side-scrim{position:fixed;inset:0;z-index:85;background:rgba(8,7,4,.55);backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px)}
+.mobile-bar{display:none}
+main,footer{margin-left:var(--side-w)}
+@media (max-width:959px){
+  main,footer{margin-left:0}
+  .mobile-bar{display:block}
+  .side{transform:translateX(-102%);transition:transform .3s cubic-bezier(.2,.8,.2,1);width:min(84vw,var(--side-w));box-shadow:30px 0 60px -30px rgba(0,0,0,.7)}
+  .side.open{transform:none}
+  .side-close{display:grid;place-items:center}
+}
+@media (min-width:960px){.side-scrim{display:none!important}.open-menu.btn{display:none}}
+.menu-toggle{width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.05);display:grid;place-content:center;gap:5px;cursor:pointer}
+.menu-toggle span{display:block;width:20px;height:2px;border-radius:2px;background:#fff}
+.menu-toggle span:nth-child(2){width:14px;background:var(--sun);justify-self:end}
+
+/* Início */
+.home{min-height:calc(100svh - 62px);display:flex;align-items:center}
+@media (min-width:960px){.home{min-height:100svh}}
+.home .wrap{width:100%}
+.home .hero-mark{padding-block:24px}
+.home .hero-mark h1 svg{width:min(620px,84vw)}
+.home .claim{font-size:clamp(18px,2.8vw,28px)}
+.home-ctas{position:relative;margin-top:34px;display:flex;flex-wrap:wrap;justify-content:center;gap:12px}
+.btn-glass-d{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.2);color:#fff;backdrop-filter:blur(8px)}
+.btn-glass-d:hover{border-color:var(--sun)}
+
+/* Telas internas */
+.view:not(.home){min-height:calc(100svh - 62px)}
+@media (min-width:960px){.view:not(.home){min-height:100svh}}
+.view-head{display:flex;align-items:center;gap:16px;margin-bottom:24px}
+.view-head .ai.thumb{width:64px;height:64px;border-radius:18px}
+.view-opts{padding:0;max-width:820px}
+.view .opt{padding:14px 14px}
+.journey.view{display:flex;align-items:center}
+.journey.view .wrap{width:100%}
+
+/* Produtos: miniaturas realistas */
+.oi.photo{width:64px;height:64px;border-radius:16px;overflow:hidden;background:none;border:0;box-shadow:0 0 0 1px rgba(242,194,48,.35),0 14px 26px -14px rgba(0,0,0,.9),0 10px 22px -16px rgba(242,194,48,.5)}
+.oi.photo svg{width:100%;height:100%;display:block}
+#produtos .opt,#servicos .opt,#duvidas .opt,#empresas .opt,#oticas .opt{padding:12px 16px 12px 12px;gap:16px}
+#produtos .ot,#servicos .ot,#duvidas .ot,#empresas .ot,#oticas .ot{font-size:16px}
+#produtos .ot small,#servicos .ot small{font-size:12.5px;margin-top:2px}
+.light .oi.photo{box-shadow:0 0 0 1px rgba(201,151,10,.4),0 12px 22px -14px rgba(22,20,13,.6)}
+</style>
+</head>
+<body>
+
+
+<!-- ===== CONFIGURAÇÃO: WhatsApp (país + DDD + número, só dígitos). Ex.: 5585912345678 ===== -->
+<script>window.FORTAL_WHATSAPP = "5585981333540";</script>
+
+<!-- Ícones -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-eye" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3.2"/></symbol>
+    <symbol id="i-glasses" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="6.5" cy="14" r="3.8"/><circle cx="17.5" cy="14" r="3.8"/><path d="M10.3 14h3.4M2.7 13 4.5 7M21.3 13 19.5 7"/></symbol>
+    <symbol id="i-lens" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><ellipse cx="12" cy="12" rx="6.5" ry="9"/><path d="M12 3c-2.6 3-2.6 15 0 18"/><path d="M15 7.5c.8.9 1.2 2 1.3 3.2"/></symbol>
+    <symbol id="i-contact" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 13a8 5.5 0 0 1 16 0"/><path d="M4 13c3 2.2 13 2.2 16 0"/><path d="M9 21v-3.5a3 3 0 0 1 6 0V21"/></symbol>
+    <symbol id="i-house" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11 12 4l9 7"/><path d="M5 10v10h14V10"/><circle cx="12" cy="14.5" r="2.2"/></symbol>
+    <symbol id="i-kid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/><path d="M10 8h.01M14 8h.01"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V5l8-2v18M12 8h8v13"/><path d="M7 8h2M7 12h2M7 16h2M15 12h2M15 16h2M2 21h20"/></symbol>
+    <symbol id="i-store" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l2-5h14l2 5"/><path d="M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0"/><path d="M5 12v9h14v-9"/><circle cx="9.5" cy="16.5" r="1.6"/><circle cx="14.5" cy="16.5" r="1.6"/></symbol>
+    <symbol id="i-doc" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h4"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+    <symbol id="i-screen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M9 20h6M12 16v4"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="10" r="3"/><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+    <symbol id="i-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20s-8-4.5-8-10a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.5-8 10-8 10z"/></symbol>
+    <symbol id="i-lock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="5" y="10" width="14" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+    <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 6.5a4 4 0 0 0-5.3 5.3L3 18l3 3 6.2-6.2a4 4 0 0 0 5.3-5.3l-2.5 2.5-2.5-2.5z"/></symbol>
+    <symbol id="i-alert" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5h.01"/></symbol>
+    <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3.9 2.5 1 2.7.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3z"/></symbol>
+    <linearGradient id="fo-gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe89a"/><stop offset=".45" stop-color="#f2c230"/><stop offset="1" stop-color="#c9970a"/></linearGradient>
+    <linearGradient id="fo-white" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e6e0d0"/></linearGradient>
+    <symbol id="logo-full" viewBox="117 186 1994 368"><path fill="url(#fo-white)" fill-rule="evenodd" d="M186.7 454.0C185.9 453.7 184.8 453.1 184.4 452.6C181.8 449.8 170.6 418.7 168.4 408.5C166.8 401.0 164.9 388.6 164.0 379.5C163.4 374.3 163.6 340.2 164.4 288.6L164.8 267.4L165.9 266.5C167.5 265.3 172.7 265.0 189.6 265.0C197.9 265.0 203.4 265.2 204.0 265.5C205.0 266.0 205.0 267.1 205.0 313.6C205.0 362.7 205.0 363.6 207.0 374.8C207.6 378.1 208.3 382.4 209.0 387.2C211.0 402.2 217.0 421.9 224.1 437.2C229.6 449.2 230.6 451.5 230.4 452.6C230.3 453.7 230.1 453.8 220.5 454.1C205.9 454.5 188.5 454.5 186.7 454.0ZM637.2 419.2C636.1 418.1 636.0 417.7 636.3 415.6C636.4 414.3 636.8 412.6 637.0 411.8C637.2 410.9 638.3 406.0 639.3 400.8C641.6 388.6 643.9 376.4 644.6 373.2C644.8 371.9 645.3 369.6 645.5 368.2C645.7 366.9 646.5 363.1 647.2 359.8C651.3 340.8 659.2 297.2 659.2 293.8C659.2 292.2 658.3 288.5 656.8 284.0C652.3 269.8 650.3 262.4 650.9 261.5C651.3 260.8 658.6 260.7 730.1 260.6C808.5 260.5 808.8 260.5 809.8 261.5C811.0 262.9 810.9 264.5 809.0 270.5C804.8 284.3 801.0 290.6 795.2 293.3L792.8 294.5L746.2 294.5C709.5 294.5 699.5 294.6 699.1 295.1C698.8 295.5 698.1 298.3 697.5 301.5C694.7 316.8 693.0 326.6 692.9 328.6L692.8 330.8L735.4 330.9L778.0 331.0L778.8 332.3C779.2 332.9 779.5 333.9 779.3 334.4C778.3 337.6 777.1 340.5 774.3 346.2C770.4 354.3 767.0 358.2 762.3 360.5L759.1 362.0L723.1 362.0C689.2 362.0 687.1 362.1 686.8 362.9C686.6 363.4 685.8 367.6 685.0 372.3C684.2 376.9 682.8 384.6 682.0 389.2C681.1 393.9 679.7 401.8 678.8 406.8C677.8 412.1 676.8 416.4 676.2 417.4C674.5 420.3 672.9 420.5 654.6 420.5L638.5 420.5L637.2 419.2ZM836.0 419.5C824.9 418.1 810.9 414.4 803.9 411.0C797.2 407.7 791.9 402.4 788.9 396.3C785.9 389.9 785.0 385.9 784.6 377.5C784.3 368.9 785.5 360.2 788.3 350.0C792.9 333.1 797.3 324.3 805.2 316.3C810.5 310.9 814.7 308.1 822.0 304.9C829.3 301.7 830.9 301.3 842.2 299.2C852.1 297.4 852.5 297.4 865.1 297.4C883.3 297.4 890.6 298.4 899.8 302.0C904.5 303.8 910.5 307.1 913.7 309.7C919.0 314.1 924.1 322.1 925.4 328.2C925.7 329.6 926.2 331.8 926.5 333.1C927.5 337.5 926.8 348.9 925.0 359.8C923.2 370.7 919.3 383.4 915.5 390.4C907.0 406.2 893.3 415.0 871.2 418.8C865.5 419.8 842.2 420.2 836.0 419.5ZM1268.6 419.3C1267.0 418.9 1265.4 418.1 1264.6 417.3L1263.3 416.1L1264.4 410.2C1265.9 402.5 1266.8 397.1 1267.5 392.8C1267.8 390.8 1268.4 387.8 1268.8 386.0C1269.1 384.2 1269.8 380.5 1270.2 377.8C1270.7 375.0 1271.2 371.6 1271.5 370.2C1272.2 366.6 1273.9 357.0 1275.1 350.8C1275.6 347.7 1276.3 344.2 1276.5 343.0C1276.7 341.8 1277.2 339.3 1277.5 337.5C1277.8 335.7 1278.3 333.2 1278.5 332.0C1278.7 330.8 1279.2 328.3 1279.5 326.5C1279.8 324.7 1280.6 320.1 1281.3 316.2C1282.9 307.8 1283.1 306.3 1284.2 299.2C1284.6 296.2 1285.5 291.4 1286.0 288.5C1287.8 279.1 1289.0 272.4 1290.0 266.0C1291.4 257.7 1292.2 256.0 1295.6 254.3C1299.3 252.5 1307.8 251.5 1319.4 251.5C1327.8 251.5 1328.8 251.6 1330.3 252.5C1331.2 253.1 1332.0 253.8 1332.2 254.2C1332.4 254.9 1331.4 261.3 1328.5 276.5C1324.3 298.9 1319.8 323.6 1319.0 329.4C1318.7 331.2 1318.4 332.8 1318.2 333.0C1318.1 333.2 1317.3 337.2 1316.5 341.8C1315.7 346.5 1314.3 354.3 1313.3 359.2C1310.9 372.2 1307.6 389.2 1306.3 396.6C1305.6 400.1 1304.6 406.0 1303.9 409.8C1303.3 414.0 1302.5 417.0 1302.0 417.6C1300.4 419.6 1297.6 420.0 1284.0 419.9C1275.4 419.9 1270.4 419.7 1268.6 419.3ZM931.5 418.7C930.2 418.3 928.7 417.5 928.0 416.8C927.0 415.6 926.9 415.4 927.4 413.4C927.7 412.2 928.4 409.2 928.8 406.8C931.9 389.2 932.7 384.6 934.5 375.8C935.6 370.2 937.0 363.5 937.5 360.8C938.0 358.0 938.8 354.2 939.2 352.2C939.7 350.3 940.6 345.7 941.3 342.0C941.9 338.3 942.8 333.7 943.2 331.9C944.5 326.1 944.6 323.0 943.8 318.8C941.9 309.0 941.8 307.7 942.7 306.3C943.7 304.8 945.3 304.3 953.2 303.3C960.3 302.4 963.4 302.3 964.8 303.1C966.0 303.8 968.2 306.3 970.0 309.0C970.7 310.0 972.3 312.1 973.7 313.8C975.1 315.4 976.3 316.8 976.4 317.0C977.4 318.5 976.0 308.8 974.7 305.6C973.8 303.3 973.8 301.6 974.9 301.1C976.3 300.3 982.3 299.1 988.8 298.2C992.7 297.7 1000.1 297.3 1010.0 297.2C1027.3 296.9 1030.9 297.3 1032.7 299.6C1033.6 300.9 1033.6 300.9 1032.2 306.8C1030.2 315.8 1028.6 321.2 1027.5 323.7C1025.9 327.1 1024.7 327.5 1015.4 327.1C1003.4 326.7 983.9 328.4 981.9 330.0C981.2 330.5 980.8 332.0 980.2 335.8C979.4 341.6 975.2 363.9 972.7 376.2C970.5 387.2 966.8 405.9 965.7 412.0C965.3 414.6 964.7 417.1 964.4 417.6C963.6 419.2 960.5 419.5 947.0 419.5C937.1 419.4 933.2 419.3 931.5 418.7ZM1073.2 419.2C1062.7 418.2 1051.3 413.4 1046.0 407.7C1040.7 401.9 1037.7 389.5 1039.5 380.7C1039.8 379.3 1040.8 373.6 1041.8 368.0C1042.8 362.4 1043.8 356.7 1044.0 355.5C1049.2 327.1 1049.2 327.0 1046.3 327.0C1045.7 327.0 1044.9 326.7 1044.6 326.4C1043.7 325.5 1043.9 320.1 1045.2 310.9C1045.9 306.3 1046.3 302.2 1046.2 301.7C1045.7 299.9 1047.1 298.9 1050.4 298.6C1052.1 298.5 1053.7 298.1 1053.9 297.8C1054.2 297.5 1054.6 295.8 1054.9 294.0C1059.0 269.0 1059.4 267.8 1063.7 265.3C1069.4 261.9 1080.8 259.5 1091.3 259.5C1098.4 259.5 1098.5 259.5 1099.3 260.7C1100.0 261.9 1100.0 262.3 1099.1 266.6C1097.8 272.4 1097.3 275.5 1096.0 283.8C1095.5 287.3 1094.8 291.5 1094.5 293.0C1093.7 296.8 1094.0 298.3 1095.3 298.1C1095.8 298.0 1103.5 297.8 1112.4 297.6C1133.1 297.4 1132.3 296.9 1129.8 306.6C1128.0 313.3 1127.8 313.9 1126.0 317.5C1123.8 321.9 1121.8 324.3 1119.1 325.9L1116.8 327.2L1102.6 327.4C1089.9 327.5 1088.5 327.6 1088.3 328.4C1088.2 328.9 1087.1 334.1 1086.0 340.0C1084.9 345.9 1083.7 351.8 1083.5 353.0C1081.3 362.6 1078.5 378.2 1078.5 380.5C1078.5 382.1 1078.9 383.9 1079.4 385.0C1081.4 389.0 1085.2 390.0 1098.0 390.0C1106.4 390.0 1107.4 390.1 1108.9 391.0C1111.5 392.6 1111.8 393.8 1110.8 399.6C1109.1 410.1 1107.7 416.0 1106.6 417.1C1104.9 419.1 1101.5 419.5 1088.0 419.4C1081.0 419.4 1074.3 419.3 1073.2 419.2ZM1154.2 418.2C1142.3 416.9 1133.8 414.1 1129.3 410.0C1123.6 404.7 1120.7 393.3 1122.6 383.3C1123.7 376.9 1125.6 370.1 1127.0 367.1C1130.0 360.7 1134.5 355.5 1140.2 351.8C1145.8 348.2 1149.1 347.0 1158.5 344.9C1163.4 343.8 1164.8 343.8 1182.0 343.8C1205.6 343.8 1208.8 344.2 1215.6 348.9C1217.7 350.3 1219.7 351.5 1220.0 351.5C1220.5 351.5 1220.7 350.9 1221.5 346.9C1222.8 340.4 1222.0 335.4 1219.1 332.3C1217.4 330.5 1215.6 329.6 1211.2 328.3C1208.0 327.4 1205.9 327.3 1176.0 327.0C1143.1 326.7 1142.5 326.7 1142.5 324.8C1142.5 323.5 1148.7 305.6 1149.9 303.4C1150.9 301.5 1151.7 300.7 1153.7 299.8L1156.2 298.6L1186.0 298.2C1226.4 297.6 1232.2 298.2 1242.7 303.6C1250.4 307.7 1255.0 313.6 1257.2 322.3C1258.4 326.9 1258.3 338.3 1257.0 345.0C1256.5 347.9 1255.5 353.6 1254.8 357.8C1253.0 368.4 1251.0 380.1 1250.8 381.0C1250.6 381.7 1249.2 389.3 1245.7 409.7C1244.8 414.9 1244.3 416.9 1243.5 417.7C1242.5 418.7 1242.5 418.7 1239.0 417.8C1235.8 417.0 1234.2 416.9 1226.1 417.2C1220.9 417.4 1215.7 417.8 1214.5 418.1C1210.8 419.0 1162.3 419.1 1154.2 418.2ZM1213.9 390.6C1213.9 389.3 1214.6 384.9 1215.4 380.8C1216.3 376.6 1217.0 372.4 1217.1 371.3L1217.2 369.3L1211.2 368.4C1197.8 366.4 1172.9 366.8 1166.9 369.0C1160.9 371.2 1158.0 375.5 1157.9 381.9C1157.9 390.1 1162.4 391.9 1183.5 392.1C1189.7 392.1 1197.0 392.3 1199.8 392.5C1202.5 392.7 1206.8 392.9 1209.3 392.9L1213.9 393.0L1213.9 390.6ZM860.2 389.5C868.5 388.2 873.4 386.0 878.4 381.3C882.9 377.1 885.1 372.9 887.7 364.0C889.1 359.2 890.1 351.0 889.9 347.2C889.3 340.1 885.8 334.0 880.5 330.7C877.2 328.7 870.3 326.6 864.5 325.9C856.2 324.9 844.6 326.8 838.0 330.3C835.8 331.4 830.8 336.1 828.9 338.9C824.4 345.5 821.2 358.5 821.6 369.1C821.8 374.6 821.9 375.1 823.7 378.7C825.1 381.6 826.1 382.9 827.9 384.2C830.3 385.9 835.9 388.1 841.0 389.2C844.5 390.0 855.5 390.2 860.2 389.5ZM236.2 343.2C234.0 342.6 234.0 342.2 234.0 323.9C234.0 308.8 234.1 306.5 234.8 305.8C235.5 305.1 241.0 305.0 287.7 305.0C327.6 305.0 339.9 305.1 340.4 305.6C341.4 306.6 341.1 307.6 338.6 311.3C337.3 313.3 335.4 316.2 334.3 317.8C330.6 323.4 324.5 330.4 318.4 336.0C315.0 339.1 311.7 342.0 311.0 342.4C309.9 343.2 306.2 343.3 273.5 343.3C253.6 343.4 236.8 343.3 236.2 343.2ZM386.5 242.9C378.6 240.1 362.7 236.0 353.8 234.5C339.2 232.1 336.1 232.0 245.4 232.0L160.5 232.0L155.8 227.6C145.2 217.6 123.0 194.6 123.0 193.5L123.0 192.5L237.6 192.5C356.2 192.5 361.0 192.6 367.0 194.5C368.0 194.8 371.7 195.8 375.3 196.7C386.6 199.6 391.1 202.7 392.4 208.6C393.1 211.4 393.2 241.4 392.6 242.3C392.2 242.9 390.3 244.0 389.7 244.0C389.4 243.9 388.0 243.5 386.5 242.9Z"/><path fill="url(#fo-gold)" fill-rule="evenodd" d="M324.0 548.4C305.6 547.3 288.3 542.1 263.9 530.3C248.4 522.9 232.6 511.8 220.5 499.9C214.7 494.2 208.5 486.8 208.5 485.4C208.5 483.4 209.9 483.3 237.8 483.1C263.5 483.0 264.4 483.0 266.7 484.0C268.0 484.5 270.0 485.6 271.1 486.4C276.8 490.3 294.0 498.0 301.8 500.0C303.9 500.6 307.2 501.5 309.0 502.0C310.8 502.5 312.9 503.0 313.8 503.2C324.7 505.4 326.2 505.6 336.4 505.9C353.7 506.3 364.0 504.9 379.8 499.9C400.7 493.3 416.0 484.1 432.9 468.2C446.0 455.7 458.3 437.6 464.7 421.0C471.0 404.6 475.0 383.2 474.3 369.2C473.9 360.0 471.9 346.5 469.6 338.0C467.8 331.3 463.9 321.1 460.5 314.2C451.3 295.6 442.2 283.1 428.3 270.3L423.0 265.4L423.0 243.0C423.0 223.7 423.1 220.6 423.8 219.6C425.2 217.6 426.6 218.1 436.7 224.4C443.6 228.7 444.6 229.4 452.6 236.1C468.2 249.1 479.6 262.6 491.9 282.2C501.6 297.9 509.8 318.7 513.5 337.0C514.5 341.7 515.0 346.3 516.1 357.8C516.7 364.5 516.3 388.9 515.6 392.5C515.3 393.7 514.8 396.7 514.5 399.0C513.9 403.2 512.5 410.2 511.5 413.5C511.2 414.5 510.3 417.7 509.5 420.8C504.3 439.1 495.8 456.7 483.8 473.6C465.1 499.8 445.2 517.1 417.0 531.3C414.1 532.8 411.5 534.0 411.1 534.0C410.8 534.0 408.6 534.9 406.1 535.9C393.4 541.5 373.4 546.8 360.5 548.0C353.7 548.6 332.5 548.8 324.0 548.4ZM571.4 490.2C570.9 489.5 570.8 467.4 570.9 357.1C571.0 234.7 571.1 224.7 571.9 224.1C573.0 223.3 575.6 223.3 576.9 224.3L578.0 225.1L578.0 357.4C578.0 459.7 577.9 489.9 577.4 490.4C576.5 491.3 572.3 491.2 571.4 490.2ZM1387.5 419.2C1371.8 417.1 1355.3 411.5 1347.7 405.9C1340.9 400.9 1337.7 397.0 1334.8 389.9C1329.1 376.0 1328.5 359.5 1333.0 336.4C1335.6 323.0 1339.7 312.9 1347.7 300.0C1355.3 287.7 1365.6 278.1 1378.7 271.2C1392.8 263.8 1411.2 260.2 1435.2 260.4C1448.3 260.4 1452.0 260.8 1462.8 262.8C1475.2 265.2 1478.8 266.3 1485.0 269.5C1494.5 274.5 1499.2 278.7 1504.7 287.0C1511.4 297.3 1513.5 314.7 1510.5 336.1C1508.4 351.0 1505.5 360.6 1499.7 372.2C1492.0 387.6 1482.6 398.0 1466.7 408.9C1458.5 414.4 1445.3 418.0 1427.5 419.5C1419.2 420.2 1393.3 420.0 1387.5 419.2ZM1689.0 419.4C1674.2 417.4 1661.8 413.5 1652.9 408.2C1645.2 403.5 1642.4 400.2 1640.2 393.1C1638.5 387.8 1638.0 377.7 1639.2 371.2C1639.6 368.8 1640.6 363.6 1641.2 359.8C1642.4 353.0 1642.9 350.3 1646.7 330.8C1647.6 325.8 1648.6 320.7 1648.7 319.5C1648.9 318.3 1649.7 313.9 1650.6 309.8C1652.2 301.5 1653.0 300.0 1656.5 299.0C1657.4 298.7 1664.1 298.5 1671.1 298.5C1682.9 298.5 1684.2 298.6 1685.9 299.5C1687.0 300.0 1688.1 301.0 1688.4 301.7C1689.1 303.2 1689.1 302.9 1686.2 319.0C1685.2 324.4 1684.1 330.7 1683.7 333.0C1683.3 335.3 1682.5 339.4 1682.0 342.0C1681.5 344.6 1680.6 349.3 1680.0 352.5C1679.4 355.7 1678.5 360.4 1678.0 363.0C1676.1 372.5 1675.9 375.0 1676.7 378.4C1677.9 383.6 1680.4 386.2 1686.3 388.2C1692.4 390.3 1695.1 390.6 1707.1 390.4C1717.0 390.2 1718.5 390.1 1720.5 389.2C1726.8 386.3 1727.7 384.2 1730.8 365.5C1731.4 361.2 1732.4 355.5 1733.0 352.8C1734.2 346.4 1736.9 331.0 1737.8 325.5C1738.5 320.8 1740.1 311.8 1741.2 306.0C1741.8 303.0 1742.2 302.0 1743.4 300.9C1746.1 298.5 1748.1 298.2 1762.0 298.2L1774.8 298.2L1776.9 299.6C1778.8 300.9 1779.0 301.2 1779.0 303.1C1779.0 305.0 1778.2 310.9 1777.3 315.0C1774.7 328.1 1771.6 345.3 1769.0 360.2C1765.2 382.7 1763.2 389.3 1757.6 397.6C1753.5 403.7 1748.0 408.4 1739.8 412.9C1728.6 419.1 1724.1 420.0 1705.8 419.9C1698.3 419.9 1690.8 419.7 1689.0 419.4ZM1891.2 419.7C1878.7 418.6 1860.4 414.0 1854.2 410.5C1850.1 408.2 1844.0 402.6 1841.7 399.0C1839.1 395.2 1836.7 388.1 1835.9 382.1C1834.4 369.7 1837.6 351.9 1844.6 333.8C1848.1 324.6 1848.3 324.4 1852.9 319.1C1858.2 313.2 1861.4 310.6 1868.0 307.3C1875.4 303.5 1880.8 301.8 1891.4 299.7C1900.5 297.9 1901.1 297.8 1914.8 297.6C1941.0 297.2 1950.0 299.0 1961.0 306.9C1966.4 310.7 1967.9 312.3 1970.9 317.4C1976.9 327.4 1978.7 340.2 1976.2 355.1C1972.9 374.9 1969.2 385.9 1962.5 396.2C1960.0 400.0 1954.2 405.6 1949.8 408.4C1940.5 414.4 1927.7 418.2 1912.8 419.5C1907.1 420.0 1895.8 420.0 1891.2 419.7ZM1783.0 418.6C1781.9 418.5 1780.4 417.8 1779.5 417.0C1777.4 415.3 1777.3 415.7 1780.3 398.8C1781.6 391.6 1783.1 382.3 1783.8 378.0C1784.5 373.7 1785.2 369.1 1785.5 367.8C1785.7 366.4 1786.3 362.9 1786.8 360.0C1787.9 353.0 1788.7 348.1 1790.0 341.5C1791.1 335.5 1791.6 332.8 1792.5 327.2C1793.1 323.9 1793.7 320.0 1794.0 318.5C1795.6 308.2 1797.2 298.6 1797.8 294.8C1798.2 292.3 1798.8 288.8 1799.0 287.0C1799.3 285.2 1800.1 280.5 1800.7 276.5C1801.4 272.5 1802.3 266.8 1802.8 263.8C1803.9 256.8 1804.8 255.6 1810.1 254.1C1815.8 252.4 1821.1 251.9 1831.9 252.1C1845.1 252.3 1844.7 252.0 1843.0 260.5C1842.7 262.0 1842.2 264.3 1842.0 265.5C1841.7 266.7 1841.2 269.9 1840.8 272.5C1840.3 275.1 1839.6 278.9 1839.2 281.0C1838.8 283.1 1838.2 286.0 1838.0 287.5C1837.7 289.0 1837.3 291.6 1837.0 293.2C1836.7 294.9 1836.3 297.4 1836.0 298.8C1834.7 306.4 1833.4 314.1 1833.0 316.5C1832.8 318.0 1832.3 320.4 1832.0 321.8C1831.6 323.9 1830.7 328.7 1829.0 337.9C1828.7 339.3 1828.3 341.7 1828.0 343.1C1827.0 348.9 1825.5 357.4 1825.0 360.5C1824.7 362.3 1824.2 364.8 1824.0 366.0C1823.1 370.7 1822.5 374.6 1821.0 383.5C1820.8 385.0 1820.2 388.2 1819.8 390.5C1819.4 392.8 1818.8 396.6 1818.5 398.8C1817.1 408.4 1815.7 415.4 1815.0 416.2C1814.7 416.6 1813.5 417.4 1812.2 418.0C1810.1 418.9 1809.2 419.0 1797.4 418.9C1790.4 418.9 1783.9 418.7 1783.0 418.6ZM1581.2 418.0C1561.1 417.7 1556.6 417.5 1553.0 416.8C1546.4 415.4 1541.2 413.6 1535.2 410.7C1528.0 407.2 1521.9 401.7 1519.2 396.4C1515.2 388.4 1513.5 377.2 1515.2 368.8C1515.6 366.6 1516.3 362.4 1516.7 359.5C1518.6 347.8 1523.9 332.6 1529.1 324.5C1531.9 320.1 1538.7 313.2 1543.4 310.1C1551.1 305.0 1560.6 301.4 1571.0 299.8C1581.0 298.2 1585.9 298.1 1612.2 298.6L1638.2 299.0L1639.6 300.4L1641.0 301.8L1639.2 307.1C1637.2 313.4 1636.3 315.4 1632.9 320.3C1630.1 324.6 1628.1 326.3 1624.9 327.0C1623.4 327.3 1614.7 327.5 1600.9 327.4C1581.6 327.3 1578.9 327.3 1575.8 328.1C1567.6 330.2 1561.8 334.7 1558.1 341.8C1553.3 351.1 1550.8 368.4 1553.1 375.9C1554.9 381.5 1557.8 384.7 1563.2 387.0C1569.2 389.6 1570.1 389.6 1596.9 389.9L1622.1 390.1L1623.9 391.7L1625.7 393.4L1625.1 399.6C1624.7 403.0 1624.1 407.3 1623.7 409.2C1623.3 411.2 1622.8 413.3 1622.7 413.9C1622.6 414.5 1621.8 415.8 1620.9 416.7L1619.4 418.5L1612.3 418.4C1608.4 418.3 1594.5 418.2 1581.2 418.0ZM2016.8 417.9C1988.6 417.6 1976.6 417.3 1976.2 416.9C1975.2 416.2 1975.3 414.9 1976.7 409.5C1979.6 398.5 1982.1 393.4 1985.5 391.2L1987.4 390.0L2021.6 389.9C2058.6 389.7 2059.4 389.7 2062.3 387.0C2065.5 383.9 2064.6 379.1 2060.5 377.2C2059.3 376.6 2053.8 375.2 2048.2 374.0C2014.0 366.6 2009.4 365.4 2001.8 361.0C1995.3 357.3 1992.3 353.7 1990.1 346.9C1988.6 342.5 1988.3 338.6 1988.9 332.4C1990.6 315.7 2002.6 304.1 2022.6 299.7C2026.5 298.8 2029.5 298.8 2065.2 298.9C2089.3 299.0 2104.0 299.2 2104.6 299.5C2106.1 300.3 2106.2 302.2 2105.0 306.3C2103.2 312.4 2099.3 320.1 2096.5 323.0C2092.2 327.5 2093.9 327.2 2063.5 327.3C2048.8 327.4 2035.6 327.5 2034.2 327.7C2029.5 328.1 2025.9 330.8 2025.2 334.3C2024.2 339.8 2026.4 340.9 2045.5 344.5C2059.7 347.2 2076.6 350.9 2080.0 352.2C2089.7 355.7 2094.8 359.9 2098.7 367.4C2099.9 369.8 2101.4 376.4 2101.3 378.8C2100.5 390.4 2098.1 397.3 2092.2 405.2C2088.8 409.7 2085.8 412.1 2080.3 414.8C2074.1 417.8 2070.6 418.5 2063.0 418.4C2059.6 418.4 2038.8 418.1 2016.8 417.9ZM1427.8 389.3C1439.4 387.3 1446.6 383.8 1453.6 376.7C1461.8 368.2 1467.5 354.2 1470.3 335.6C1471.7 326.2 1471.0 316.0 1468.6 309.5C1464.0 297.4 1451.5 291.5 1430.6 291.5C1401.0 291.5 1385.8 300.6 1377.2 323.5C1375.8 327.0 1373.0 337.8 1371.9 343.2C1371.6 345.3 1371.3 350.5 1371.3 356.0C1371.3 364.3 1371.4 365.6 1372.4 369.0C1374.1 374.4 1375.7 377.1 1379.5 380.8C1386.8 387.7 1398.5 390.8 1416.2 390.2C1420.1 390.1 1425.3 389.7 1427.8 389.3ZM1910.5 389.8C1928.9 386.9 1938.0 376.0 1940.5 353.7C1941.1 348.9 1941.0 347.8 1940.3 344.5C1938.0 333.9 1932.5 328.9 1920.7 326.4C1916.5 325.6 1914.6 325.4 1908.5 325.7C1894.2 326.2 1886.5 329.6 1880.2 338.1C1875.7 344.2 1872.8 355.8 1872.8 367.8C1872.8 375.3 1873.7 378.5 1876.7 382.3C1878.6 384.6 1883.0 387.5 1886.2 388.5C1892.2 390.4 1902.6 391.0 1910.5 389.8ZM1419.7 250.3C1417.2 249.2 1417.3 248.3 1419.9 245.0C1429.5 232.9 1440.3 219.8 1441.3 219.2C1441.9 218.8 1443.5 218.1 1444.9 217.7C1447.9 216.8 1465.6 215.4 1477.2 215.1C1486.2 215.0 1487.5 215.2 1487.5 216.8C1487.5 217.1 1483.2 221.2 1477.9 225.7C1472.6 230.3 1466.0 236.0 1463.2 238.5C1453.3 247.3 1450.3 249.5 1446.6 250.3C1442.6 251.3 1421.9 251.2 1419.7 250.3Z"/></symbol>
+  </defs>
+</svg>
+
+<header class="top mobile-bar">
+  <div class="wrap nav">
+    <a class="brand" href="#inicio" aria-label="Fortal Óculos, início"><svg viewBox="0 0 1994 368" role="img" aria-label="Fortal Óculos"><use href="#logo-full"/></svg></a>
+    <button class="menu-toggle open-menu" type="button" aria-controls="side" aria-expanded="false" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<aside class="side" id="side" aria-label="Menu">
+  <div class="side-top">
+    <a class="side-brand" href="#inicio" aria-label="Fortal Óculos, início"><svg viewBox="0 0 1994 368" role="img" aria-label="Fortal Óculos"><use href="#logo-full"/></svg></a>
+    <button class="side-close" type="button" aria-label="Fechar menu">×</button>
+  </div>
+  <nav class="side-nav">
+    <p class="side-label">Para você</p>
+      <a href="#inicio" data-nav="inicio"><svg><use href="#i-house"/></svg><span>Início</span></a>
+      <a href="#servicos" data-nav="servicos"><svg><use href="#i-eye"/></svg><span>Serviços</span></a>
+      <a href="#produtos" data-nav="produtos"><svg><use href="#i-glasses"/></svg><span>Produtos</span></a>
+      <a href="#jornada" data-nav="jornada"><svg><use href="#i-doc"/></svg><span>Do exame aos óculos</span></a>
+      <a href="#duvidas" data-nav="duvidas"><svg><use href="#i-chat"/></svg><span>Dúvidas</span></a>
+    <p class="side-label">Parcerias</p>
+      <a href="#empresas" data-nav="empresas"><svg><use href="#i-building"/></svg><span>Empresas</span></a>
+      <a href="#oticas" data-nav="oticas"><svg><use href="#i-store"/></svg><span>Óticas</span></a>
+    <p class="side-label">Contato</p>
+      <a href="#contato" data-nav="contato"><svg><use href="#i-pin"/></svg><span>Fale com a gente</span></a>
+  </nav>
+  <a class="btn btn-gold side-wa" data-wa="Olá! Vim pelo site da Fortal Óculos." href="#contato"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+</aside>
+<div class="side-scrim" id="sideScrim" hidden></div>
+
+<main id="conteudo">
+  <!-- Início -->
+  <section class="band dark view home" id="inicio">
+    <div class="wrap">
+      <div class="hero-mark">
+        <h1><svg viewBox="0 0 1994 368" role="img" aria-label="Fortal Óculos"><use href="#logo-full"/></svg></h1>
+        <p class="claim">Especialista em exame de vista <span class="gold">e óculos de grau</span></p>
+        <p class="tagline"><span>Optometria</span><i></i><span>Fortaleza e Região Metropolitana</span></p>
+        <div class="home-ctas">
+          <button class="btn btn-glass-d open-menu" type="button"><svg><use href="#i-layers"/></svg>Explorar</button>
+          <a class="btn btn-gold" data-wa="Olá! Vim pelo site da Fortal Óculos." href="#contato"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band dark view" id="servicos" hidden>
+    <div class="wrap">
+      <div class="view-head"><span class="ai thumb"><svg viewBox="0 0 120 120" aria-hidden="true"><defs>
+<radialGradient id="th-e-bg" cx=".5" cy=".35" r=".8"><stop offset="0" stop-color="#3a3222"/><stop offset="1" stop-color="#0f0d08"/></radialGradient>
+<radialGradient id="th-e-scl" cx=".5" cy=".45" r=".6"><stop offset=".55" stop-color="#ffffff"/><stop offset="1" stop-color="#d9d0bd"/></radialGradient>
+<radialGradient id="th-e-iris" cx=".5" cy=".5" r=".5"><stop offset=".35" stop-color="#f4c24a"/><stop offset=".62" stop-color="#a8700f"/><stop offset=".9" stop-color="#4a2e06"/><stop offset="1" stop-color="#21160a"/></radialGradient>
+<clipPath id="th-e-clip"><path d="M12 60Q60 20 108 60Q60 100 12 60Z"/></clipPath></defs>
+<rect width="120" height="120" fill="url(#th-e-bg)"/>
+<path d="M12 60Q60 20 108 60Q60 100 12 60Z" fill="url(#th-e-scl)"/>
+<g clip-path="url(#th-e-clip)"><circle cx="60" cy="60" r="24" fill="url(#th-e-iris)"/><g stroke="#3a2306" stroke-opacity=".35" stroke-width=".7"><line x1="70.0" y1="60.0" x2="83.0" y2="61.1"/><line x1="69.9" y1="61.3" x2="82.6" y2="64.1"/><line x1="69.7" y1="62.6" x2="81.9" y2="67.1"/><line x1="69.2" y1="63.8" x2="80.8" y2="69.9"/><line x1="68.7" y1="65.0" x2="79.3" y2="72.5"/><line x1="67.9" y1="66.1" x2="77.5" y2="74.9"/><line x1="67.1" y1="67.1" x2="75.4" y2="77.1"/><line x1="66.1" y1="67.9" x2="73.1" y2="78.9"/><line x1="65.0" y1="68.7" x2="70.5" y2="80.5"/><line x1="63.8" y1="69.2" x2="67.7" y2="81.7"/><line x1="62.6" y1="69.7" x2="64.8" y2="82.5"/><line x1="61.3" y1="69.9" x2="61.9" y2="82.9"/><line x1="60.0" y1="70.0" x2="58.9" y2="83.0"/><line x1="58.7" y1="69.9" x2="55.9" y2="82.6"/><line x1="57.4" y1="69.7" x2="52.9" y2="81.9"/><line x1="56.2" y1="69.2" x2="50.1" y2="80.8"/><line x1="55.0" y1="68.7" x2="47.5" y2="79.3"/><line x1="53.9" y1="67.9" x2="45.1" y2="77.5"/><line x1="52.9" y1="67.1" x2="42.9" y2="75.4"/><line x1="52.1" y1="66.1" x2="41.1" y2="73.1"/><line x1="51.3" y1="65.0" x2="39.5" y2="70.5"/><line x1="50.8" y1="63.8" x2="38.3" y2="67.7"/><line x1="50.3" y1="62.6" x2="37.5" y2="64.8"/><line x1="50.1" y1="61.3" x2="37.1" y2="61.9"/><line x1="50.0" y1="60.0" x2="37.0" y2="58.9"/><line x1="50.1" y1="58.7" x2="37.4" y2="55.9"/><line x1="50.3" y1="57.4" x2="38.1" y2="52.9"/><line x1="50.8" y1="56.2" x2="39.2" y2="50.1"/><line x1="51.3" y1="55.0" x2="40.7" y2="47.5"/><line x1="52.1" y1="53.9" x2="42.5" y2="45.1"/><line x1="52.9" y1="52.9" x2="44.6" y2="42.9"/><line x1="53.9" y1="52.1" x2="46.9" y2="41.1"/><line x1="55.0" y1="51.3" x2="49.5" y2="39.5"/><line x1="56.2" y1="50.8" x2="52.3" y2="38.3"/><line x1="57.4" y1="50.3" x2="55.2" y2="37.5"/><line x1="58.7" y1="50.1" x2="58.1" y2="37.1"/><line x1="60.0" y1="50.0" x2="61.1" y2="37.0"/><line x1="61.3" y1="50.1" x2="64.1" y2="37.4"/><line x1="62.6" y1="50.3" x2="67.1" y2="38.1"/><line x1="63.8" y1="50.8" x2="69.9" y2="39.2"/><line x1="65.0" y1="51.3" x2="72.5" y2="40.7"/><line x1="66.1" y1="52.1" x2="74.9" y2="42.5"/><line x1="67.1" y1="52.9" x2="77.1" y2="44.6"/><line x1="67.9" y1="53.9" x2="78.9" y2="46.9"/><line x1="68.7" y1="55.0" x2="80.5" y2="49.5"/><line x1="69.2" y1="56.2" x2="81.7" y2="52.3"/><line x1="69.7" y1="57.4" x2="82.5" y2="55.2"/><line x1="69.9" y1="58.7" x2="82.9" y2="58.1"/></g><circle cx="60" cy="60" r="10" fill="#0b0906"/><path d="M12 60Q60 20 108 60" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="10"/></g>
+<ellipse cx="52" cy="51" rx="5" ry="4" fill="#fff" opacity=".92"/><circle cx="67" cy="67" r="1.8" fill="#fff" opacity=".7"/>
+<path d="M12 60Q60 20 108 60Q60 100 12 60Z" fill="none" stroke="#f2c230" stroke-opacity=".55" stroke-width="1.6"/></svg></span><div><h2 class="sec-title">Serviços</h2><p class="sub">O que fazemos por você</p></div></div>
+      <div class="opts view-opts">
+          <button class="opt" data-open="exame"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="se-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient>
+<radialGradient id="se-s" cx=".5" cy=".45" r=".6"><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#d6ccb6"/></radialGradient>
+<radialGradient id="se-i" cx=".5" cy=".5" r=".5"><stop offset=".35" stop-color="#f4c24a"/><stop offset=".65" stop-color="#a8700f"/><stop offset="1" stop-color="#2a1b07"/></radialGradient>
+<clipPath id="se-c"><path d="M16 60Q60 24 104 60Q60 96 16 60Z"/></clipPath></defs>
+<rect width="120" height="120" fill="url(#se-bg)"/>
+<path d="M16 60Q60 24 104 60Q60 96 16 60Z" fill="url(#se-s)"/>
+<g clip-path="url(#se-c)"><circle cx="60" cy="60" r="21" fill="url(#se-i)"/><g stroke="#3a2306" stroke-opacity=".35" stroke-width=".7"><line x1="69.0" y1="60.0" x2="81.0" y2="61.0"/><line x1="68.9" y1="61.3" x2="80.6" y2="64.0"/><line x1="68.6" y1="62.5" x2="79.8" y2="66.9"/><line x1="68.2" y1="63.7" x2="78.6" y2="69.7"/><line x1="67.6" y1="64.9" x2="77.1" y2="72.2"/><line x1="66.8" y1="65.9" x2="75.2" y2="74.5"/><line x1="65.9" y1="66.8" x2="72.9" y2="76.5"/><line x1="64.9" y1="67.6" x2="70.5" y2="78.2"/><line x1="63.7" y1="68.2" x2="67.8" y2="79.5"/><line x1="62.5" y1="68.6" x2="64.9" y2="80.4"/><line x1="61.3" y1="68.9" x2="61.9" y2="80.9"/><line x1="60.0" y1="69.0" x2="59.0" y2="81.0"/><line x1="58.7" y1="68.9" x2="56.0" y2="80.6"/><line x1="57.5" y1="68.6" x2="53.1" y2="79.8"/><line x1="56.3" y1="68.2" x2="50.3" y2="78.6"/><line x1="55.1" y1="67.6" x2="47.8" y2="77.1"/><line x1="54.1" y1="66.8" x2="45.5" y2="75.2"/><line x1="53.2" y1="65.9" x2="43.5" y2="72.9"/><line x1="52.4" y1="64.9" x2="41.8" y2="70.5"/><line x1="51.8" y1="63.7" x2="40.5" y2="67.8"/><line x1="51.4" y1="62.5" x2="39.6" y2="64.9"/><line x1="51.1" y1="61.3" x2="39.1" y2="61.9"/><line x1="51.0" y1="60.0" x2="39.0" y2="59.0"/><line x1="51.1" y1="58.7" x2="39.4" y2="56.0"/><line x1="51.4" y1="57.5" x2="40.2" y2="53.1"/><line x1="51.8" y1="56.3" x2="41.4" y2="50.3"/><line x1="52.4" y1="55.1" x2="42.9" y2="47.8"/><line x1="53.2" y1="54.1" x2="44.8" y2="45.5"/><line x1="54.1" y1="53.2" x2="47.1" y2="43.5"/><line x1="55.1" y1="52.4" x2="49.5" y2="41.8"/><line x1="56.3" y1="51.8" x2="52.2" y2="40.5"/><line x1="57.5" y1="51.4" x2="55.1" y2="39.6"/><line x1="58.7" y1="51.1" x2="58.1" y2="39.1"/><line x1="60.0" y1="51.0" x2="61.0" y2="39.0"/><line x1="61.3" y1="51.1" x2="64.0" y2="39.4"/><line x1="62.5" y1="51.4" x2="66.9" y2="40.2"/><line x1="63.7" y1="51.8" x2="69.7" y2="41.4"/><line x1="64.9" y1="52.4" x2="72.2" y2="42.9"/><line x1="65.9" y1="53.2" x2="74.5" y2="44.8"/><line x1="66.8" y1="54.1" x2="76.5" y2="47.1"/><line x1="67.6" y1="55.1" x2="78.2" y2="49.5"/><line x1="68.2" y1="56.3" x2="79.5" y2="52.2"/><line x1="68.6" y1="57.5" x2="80.4" y2="55.1"/><line x1="68.9" y1="58.7" x2="80.9" y2="58.1"/></g><circle cx="60" cy="60" r="9" fill="#0b0906"/><path d="M16 60Q60 24 104 60" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="9"/></g>
+<ellipse cx="53" cy="52" rx="4.5" ry="3.6" fill="#fff" opacity=".92"/>
+<g fill="none" stroke="#f2c230" stroke-width="1.3" opacity=".9"><circle cx="60" cy="60" r="38" stroke-dasharray="3 5"/><path d="M60 14V26M60 94V106M14 60H22M98 60H106"/></g></svg></span><span class="ot">Exame de vista<small>Medir o grau</small></span><span class="oa" aria-hidden="true">›</span></button>
+          <button class="opt" data-open="casa"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs>
+<linearGradient id="sh-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c2236"/><stop offset=".7" stop-color="#3a2d22"/><stop offset="1" stop-color="#1a140c"/></linearGradient>
+<linearGradient id="sh-w" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6efe0"/><stop offset="1" stop-color="#cdbf9f"/></linearGradient>
+<linearGradient id="sh-r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3428"/><stop offset="1" stop-color="#16140d"/></linearGradient>
+<radialGradient id="sh-glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#ffd76a" stop-opacity=".7"/><stop offset="1" stop-color="#ffd76a" stop-opacity="0"/></radialGradient><linearGradient id="sh-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#sh-bg)"/>
+<circle cx="92" cy="22" r="7" fill="#fff6d8" opacity=".85"/>
+<ellipse cx="60" cy="100" rx="46" ry="6" fill="#000" opacity=".5"/>
+<path d="M28 58V98H92V58" fill="url(#sh-w)"/><path d="M20 62L60 30L100 62L94 66L60 39L26 66Z" fill="url(#sh-r)"/>
+<path d="M60 30L100 62" stroke="#f2c230" stroke-width="1.4" opacity=".7"/>
+<circle cx="45" cy="74" r="16" fill="url(#sh-glow)"/><rect x="38" y="66" width="15" height="15" rx="2" fill="#ffd76a"/><path d="M45.5 66V81M38 73.5H53" stroke="#c9970a" stroke-width="1.4"/>
+<rect x="64" y="72" width="16" height="26" rx="2" fill="#5a4630"/><circle cx="77" cy="86" r="1.3" fill="url(#sh-g)"/>
+<path d="M94 42a8 8 0 1 1 16 0c0 6-8 14-8 14s-8-8-8-14z" fill="url(#sh-g)"/><circle cx="102" cy="42" r="3" fill="#16140d"/></svg></span><span class="ot">Atendimento em casa<small>Exame no seu endereço</small></span><span class="oa" aria-hidden="true">›</span></button>
+          <button class="opt" data-open="kids"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="sk-bg" cx=".5" cy=".3" r=".85"><stop offset="0" stop-color="#fffaf0"/><stop offset=".55" stop-color="#efe3c4"/><stop offset="1" stop-color="#c9a654"/></radialGradient><linearGradient id="sk-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient>
+<linearGradient id="sk-l" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff" stop-opacity=".75"/><stop offset="1" stop-color="#cfe6ff" stop-opacity=".3"/></linearGradient>
+<linearGradient id="sk-b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4fa3e0"/><stop offset="1" stop-color="#2a6fb0"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#sk-bg)"/>
+<ellipse cx="60" cy="96" rx="44" ry="5" fill="#5a4206" opacity=".25"/>
+<g transform="rotate(-8 82 76)"><rect x="66" y="60" width="32" height="32" rx="5" fill="url(#sk-b)"/><path d="M66 65Q66 60 71 60H93Q98 60 98 65" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="2"/><text x="82" y="85" text-anchor="middle" font-family="Unbounded,Arial Black,sans-serif" font-weight="800" font-size="22" fill="#fff">A</text></g>
+<g transform="rotate(6 44 50)"><circle cx="30" cy="50" r="14" fill="url(#sk-l)"/><circle cx="62" cy="50" r="14" fill="url(#sk-l)"/>
+<circle cx="30" cy="50" r="14" fill="none" stroke="url(#sk-g)" stroke-width="5"/><circle cx="62" cy="50" r="14" fill="none" stroke="url(#sk-g)" stroke-width="5"/>
+<path d="M44 48Q46 44 48 48" fill="none" stroke="url(#sk-g)" stroke-width="4" stroke-linecap="round"/>
+<path d="M24 44Q27 40 32 40M56 44Q59 40 64 40" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></g></svg></span><span class="ot">Visão infantil<small>Exame para crianças</small></span><span class="oa" aria-hidden="true">›</span></button>
+          <button class="opt" data-open="adapt"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="sa-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient><linearGradient id="sa-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient>
+<linearGradient id="sa-case" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#d9d3c4"/></linearGradient>
+<radialGradient id="sa-cap" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".6" stop-color="#f2c230"/><stop offset="1" stop-color="#a87c06"/></radialGradient>
+<radialGradient id="sa-cap2" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#d6ecff"/><stop offset=".6" stop-color="#6fa8d6"/><stop offset="1" stop-color="#2d5f8c"/></radialGradient></defs>
+<rect width="120" height="120" fill="url(#sa-bg)"/>
+<ellipse cx="60" cy="88" rx="48" ry="6" fill="#000" opacity=".55"/>
+<rect x="14" y="52" width="92" height="30" rx="15" fill="url(#sa-case)"/>
+<path d="M22 54H98" stroke="#fff" stroke-width="2" opacity=".8"/>
+<circle cx="36" cy="58" r="17" fill="#b9b1a0"/><circle cx="36" cy="55" r="17" fill="url(#sa-cap2)"/>
+<circle cx="84" cy="58" r="17" fill="#b9b1a0"/><circle cx="84" cy="55" r="17" fill="url(#sa-cap)"/>
+<g font-family="Manrope,Arial,sans-serif" font-weight="800" font-size="13" text-anchor="middle" fill="#16140d"><text x="36" y="60">R</text><text x="84" y="60">L</text></g>
+<path d="M26 47Q30 42 36 41M74 47Q78 42 84 41" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".75"/></svg></span><span class="ot">Adaptação de lentes de contato<small>Primeiro uso</small></span><span class="oa" aria-hidden="true">›</span></button>
+          <button class="opt b2b" data-open="empresa"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs>
+<linearGradient id="sb-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c2236"/><stop offset=".75" stop-color="#3a2d22"/><stop offset="1" stop-color="#14100a"/></linearGradient>
+<linearGradient id="sb-glass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3c4a66"/><stop offset=".5" stop-color="#1f2638"/><stop offset="1" stop-color="#11151f"/></linearGradient><linearGradient id="sb-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#sb-bg)"/>
+<ellipse cx="60" cy="104" rx="48" ry="5" fill="#000" opacity=".55"/>
+<rect x="14" y="58" width="20" height="44" fill="#1a1f2c"/><rect x="86" y="50" width="22" height="52" fill="#1a1f2c"/>
+<g fill="#ffd76a" opacity=".7"><rect x="18" y="64" width="4" height="4"/><rect x="26" y="72" width="4" height="4"/><rect x="90" y="58" width="4" height="4"/><rect x="99" y="70" width="4" height="4"/></g>
+<rect x="32" y="22" width="56" height="80" fill="url(#sb-glass)"/><rect x="38" y="34" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="38" y="45" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="38" y="56" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="38" y="67" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="38" y="78" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="49" y="34" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="49" y="45" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="49" y="56" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="49" y="67" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="49" y="78" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="60" y="34" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="60" y="45" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="60" y="56" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="60" y="67" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="60" y="78" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="71" y="34" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="71" y="45" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="71" y="56" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="71" y="67" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="71" y="78" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/>
+<path d="M32 22H88" stroke="url(#sb-g)" stroke-width="3"/><path d="M33 23L33 101" stroke="#fff" stroke-opacity=".2"/>
+<rect x="52" y="90" width="16" height="12" fill="#ffd76a" opacity=".85"/><path d="M60 90V102" stroke="#c9970a"/></svg></span><span class="ot">Para empresas<small>Exame no trabalho</small></span><span class="oa" aria-hidden="true">›</span></button>
+          <button class="opt b2b" data-open="otica"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="so-bg" cx=".5" cy=".3" r=".85"><stop offset="0" stop-color="#fffaf0"/><stop offset=".55" stop-color="#efe3c4"/><stop offset="1" stop-color="#c9a654"/></radialGradient><linearGradient id="so-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient>
+<linearGradient id="so-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a261c"/><stop offset="1" stop-color="#121008"/></linearGradient>
+<linearGradient id="so-win" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff8e4"/><stop offset="1" stop-color="#e6d6a8"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#so-bg)"/>
+<ellipse cx="60" cy="102" rx="48" ry="5" fill="#5a4206" opacity=".3"/>
+<rect x="16" y="34" width="88" height="66" rx="3" fill="url(#so-wall)"/>
+<path d="M12 34H108L102 50H18Z" fill="url(#so-g)"/>
+<g fill="#16140d" opacity=".85"><path d="M24 34L22 50H30L32 34Z"/><path d="M44 34L43 50H51L52 34Z"/><path d="M64 34L65 50H73L72 34Z"/><path d="M84 34L86 50H94L92 34Z"/></g>
+<path d="M18 50Q22 56 26 50Q30 56 34 50Q38 56 42 50Q46 56 50 50Q54 56 58 50Q62 56 66 50Q70 56 74 50Q78 56 82 50Q86 56 90 50Q94 56 98 50Q100 54 102 50" fill="url(#so-g)"/>
+<rect x="24" y="60" width="48" height="32" rx="2" fill="url(#so-win)"/>
+<g fill="none" stroke="#16140d" stroke-width="2.4"><rect x="30" y="72" width="14" height="10" rx="4"/><rect x="50" y="72" width="14" height="10" rx="4"/><path d="M44 76Q47 73 50 76"/></g>
+<path d="M28 88H68" stroke="#c9a654" stroke-width="1.5"/>
+<rect x="80" y="62" width="16" height="38" rx="2" fill="#3a3428"/><circle cx="92" cy="82" r="1.4" fill="url(#so-g)"/>
+<path d="M26 62L40 62L30 90" fill="#fff" opacity=".35"/></svg></span><span class="ot">Para óticas<small>Optometrista na loja</small></span><span class="oa" aria-hidden="true">›</span></button>
+        </div>
+    </div>
+  </section>
+
+  <section class="band dark view" id="produtos" hidden>
+    <div class="wrap">
+      <div class="view-head"><span class="ai thumb"><svg viewBox="0 0 120 120" aria-hidden="true"><defs>
+<linearGradient id="th-g-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".5" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient>
+<linearGradient id="th-g-lens" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset=".5" stop-color="#cfe6ff" stop-opacity=".18"/><stop offset="1" stop-color="#ffffff" stop-opacity=".35"/></linearGradient>
+<clipPath id="th-g-l"><rect x="14" y="44" width="40" height="34" rx="13"/></clipPath><clipPath id="th-g-r"><rect x="66" y="44" width="40" height="34" rx="13"/></clipPath></defs>
+<rect width="120" height="120" fill="url(#th-g-bg)"/>
+<ellipse cx="60" cy="92" rx="44" ry="6" fill="#5a4206" opacity=".25"/>
+<path d="M14 54L4 50M106 54L116 50" stroke="#16140d" stroke-width="5" stroke-linecap="round"/>
+<rect x="14" y="44" width="40" height="34" rx="13" fill="url(#th-g-lens)"/><rect x="66" y="44" width="40" height="34" rx="13" fill="url(#th-g-lens)"/>
+<g fill="#fff" opacity=".55"><polygon points="20,80 34,40 42,40 28,80" clip-path="url(#th-g-l)"/><polygon points="72,80 86,40 94,40 80,80" clip-path="url(#th-g-r)"/></g>
+<rect x="14" y="44" width="40" height="34" rx="13" fill="none" stroke="#16140d" stroke-width="7"/><rect x="66" y="44" width="40" height="34" rx="13" fill="none" stroke="#16140d" stroke-width="7"/>
+<path d="M54 55Q60 48 66 55" fill="none" stroke="#16140d" stroke-width="6" stroke-linecap="round"/>
+<g fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.4"><path d="M17 56Q18 46 28 45"/><path d="M69 56Q70 46 80 45"/></g></svg></span><div><h2 class="sec-title">Produtos</h2><p class="sub">O que você leva</p></div></div>
+      <div class="opts view-opts">
+          <button class="opt prod" data-open="oculos"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="pg-bg" cx=".5" cy=".3" r=".85"><stop offset="0" stop-color="#fffaf0"/><stop offset=".55" stop-color="#efe3c4"/><stop offset="1" stop-color="#c9a654"/></radialGradient>
+<linearGradient id="pg-frame" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#4a4232"/><stop offset=".35" stop-color="#16140d"/><stop offset="1" stop-color="#050403"/></linearGradient>
+<linearGradient id="pg-lens" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".7"/><stop offset=".5" stop-color="#dfe9ef" stop-opacity=".35"/><stop offset="1" stop-color="#ffffff" stop-opacity=".55"/></linearGradient>
+<linearGradient id="pg-gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c9970a"/><stop offset=".5" stop-color="#ffe89a"/><stop offset="1" stop-color="#c9970a"/></linearGradient>
+<clipPath id="pg-l"><path d="M12 50Q12 42 22 42H48Q56 42 55 51L53 66Q51 78 37 78H27Q14 78 13 66Z"/></clipPath><clipPath id="pg-r"><path d="M108 50Q108 42 98 42H72Q64 42 65 51L67 66Q69 78 83 78H93Q106 78 107 66Z"/></clipPath></defs>
+<rect width="120" height="120" fill="url(#pg-bg)"/>
+<ellipse cx="60" cy="90" rx="44" ry="4.5" fill="#5a4206" opacity=".3"/>
+<path d="M12 50Q12 42 22 42H48Q56 42 55 51L53 66Q51 78 37 78H27Q14 78 13 66Z" fill="url(#pg-lens)"/>
+<path d="M108 50Q108 42 98 42H72Q64 42 65 51L67 66Q69 78 83 78H93Q106 78 107 66Z" fill="url(#pg-lens)"/>
+<g fill="#fff" opacity=".85"><polygon points="18,80 34,38 40,38 24,80" clip-path="url(#pg-l)"/><polygon points="74,80 90,38 96,38 80,80" clip-path="url(#pg-r)"/></g>
+<g fill="none" stroke="url(#pg-frame)" stroke-width="6.5" stroke-linejoin="round">
+<path d="M12 50Q12 42 22 42H48Q56 42 55 51L53 66Q51 78 37 78H27Q14 78 13 66Z"/><path d="M108 50Q108 42 98 42H72Q64 42 65 51L67 66Q69 78 83 78H93Q106 78 107 66Z"/><path d="M55 49Q60 44 65 49"/></g>
+<path d="M14 46Q14 40 22 39H48" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.2"/><path d="M106 46Q106 40 98 39H72" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.2"/>
+<circle cx="15" cy="47" r="1.8" fill="url(#pg-gold)"/><circle cx="105" cy="47" r="1.8" fill="url(#pg-gold)"/></svg></span><span class="ot">Óculos de grau<small>Armações</small></span><span class="oa" aria-hidden="true">›</span></button>
+          <button class="opt prod" data-open="lentes"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="pl-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient>
+<radialGradient id="pl-body" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#ffffff" stop-opacity=".55"/><stop offset=".55" stop-color="#cfd9e0" stop-opacity=".18"/><stop offset="1" stop-color="#8aa0ad" stop-opacity=".35"/></radialGradient>
+<linearGradient id="pl-ar" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7cf0b0" stop-opacity="0"/><stop offset=".55" stop-color="#7cf0b0" stop-opacity=".35"/><stop offset=".75" stop-color="#b48cff" stop-opacity=".35"/><stop offset="1" stop-color="#b48cff" stop-opacity="0"/></linearGradient>
+<linearGradient id="pl-rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset=".5" stop-color="#9aa8b0"/><stop offset="1" stop-color="#f2c230"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#pl-bg)"/>
+<ellipse cx="60" cy="98" rx="34" ry="5" fill="#000" opacity=".55"/>
+<circle cx="60" cy="58" r="34" fill="url(#pl-body)"/>
+<circle cx="60" cy="58" r="34" fill="url(#pl-ar)"/>
+<circle cx="60" cy="58" r="34" fill="none" stroke="url(#pl-rim)" stroke-width="2.4"/>
+<circle cx="60" cy="58" r="29" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="1"/>
+<path d="M36 44Q44 30 60 28" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".85"/>
+<path d="M34 54Q35 50 37 47" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".6"/>
+<path d="M78 82Q88 74 91 62" fill="none" stroke="#f2c230" stroke-width="1.6" stroke-linecap="round" opacity=".7"/></svg></span><span class="ot">Lentes<small>Para óculos</small></span><span class="oa" aria-hidden="true">›</span></button>
+          <button class="opt prod" data-open="contato"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="pc-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient>
+<radialGradient id="pc-dome" cx=".45" cy=".3" r=".75"><stop offset="0" stop-color="#e9f6ff" stop-opacity=".75"/><stop offset=".6" stop-color="#7fb6d6" stop-opacity=".28"/><stop offset="1" stop-color="#3f7fa8" stop-opacity=".55"/></radialGradient>
+<linearGradient id="pc-skin" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e9c4a2"/><stop offset="1" stop-color="#b98761"/></linearGradient>
+<linearGradient id="pc-edge" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#ffffff" stop-opacity=".2"/><stop offset=".5" stop-color="#ffffff" stop-opacity=".95"/><stop offset="1" stop-color="#ffffff" stop-opacity=".2"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#pc-bg)"/>
+<path d="M32 120V90Q32 74 60 74Q88 74 88 90V120Z" fill="url(#pc-skin)"/>
+<path d="M42 88Q60 80 78 88" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="2"/>
+<ellipse cx="60" cy="75" rx="32" ry="5" fill="#000" opacity=".3"/>
+<path d="M24 72Q28 44 60 42Q92 44 96 72Q60 80 24 72Z" fill="url(#pc-dome)"/>
+<path d="M24 72Q60 80 96 72" fill="none" stroke="url(#pc-edge)" stroke-width="2"/>
+<path d="M24 72Q28 44 60 42Q92 44 96 72" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="1.4"/>
+<path d="M36 58Q42 48 56 46" fill="none" stroke="#fff" stroke-width="3.5" stroke-linecap="round" opacity=".85"/>
+<circle cx="78" cy="52" r="2" fill="#fff" opacity=".7"/>
+<circle cx="88" cy="28" r="4" fill="#bfe6ff" opacity=".55"/><circle cx="87" cy="27" r="1.2" fill="#fff"/></svg></span><span class="ot">Lentes de contato<small>Reposição</small></span><span class="oa" aria-hidden="true">›</span></button>
+        </div>
+    </div>
+  </section>
+
+  <section class="band dark view" id="duvidas" hidden>
+    <div class="wrap">
+      <div class="view-head"><span class="ai thumb"><svg viewBox="0 0 120 120" aria-hidden="true"><defs>
+<radialGradient id="th-q-bg" cx=".5" cy=".3" r=".85"><stop offset="0" stop-color="#3a3222"/><stop offset="1" stop-color="#0f0d08"/></radialGradient>
+<linearGradient id="th-q-b" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#th-q-bg)"/>
+<ellipse cx="60" cy="100" rx="34" ry="5" fill="#000" opacity=".45"/>
+<path d="M30 24H90Q104 24 104 38V68Q104 82 90 82H58L40 98V82H30Q16 82 16 68V38Q16 24 30 24Z" fill="url(#th-q-b)"/>
+<path d="M30 27H90Q100 27 101 37Q70 46 19 40Q19 27 30 27Z" fill="#fff" opacity=".35"/>
+<path d="M50 44Q50 34 60 34Q70 34 70 43Q70 49 63 52Q60 54 60 59" fill="none" stroke="#16140d" stroke-width="7" stroke-linecap="round"/>
+<circle cx="60" cy="70" r="4.5" fill="#16140d"/></svg></span><div><h2 class="sec-title">Dúvidas rápidas</h2><p class="sub">Respostas rápidas</p></div></div>
+      <div class="opts view-opts">
+          <button class="opt" data-open="q-comprar"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="qr-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient><linearGradient id="qr-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient><linearGradient id="qr-p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8e1cf"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#qr-bg)"/>
+<ellipse cx="60" cy="102" rx="38" ry="5" fill="#000" opacity=".5"/>
+<g transform="rotate(-6 60 60)"><rect x="30" y="18" width="60" height="80" rx="4" fill="url(#qr-p)"/>
+<rect x="30" y="18" width="60" height="12" rx="4" fill="#16140d"/><rect x="36" y="22" width="22" height="4" rx="2" fill="url(#qr-g)"/>
+<g stroke="#b7ad96" stroke-width="2.4" stroke-linecap="round"><path d="M38 40H82M38 48H74M38 56H80M38 64H66"/></g>
+<g font-family="Manrope,Arial,sans-serif" font-weight="800" font-size="8" fill="#16140d"><text x="38" y="80">OD</text><text x="38" y="90">OE</text></g>
+<path d="M52 78H72M52 88H70" stroke="#16140d" stroke-width="2" stroke-linecap="round"/></g>
+<circle cx="88" cy="84" r="14" fill="url(#qr-g)"/><path d="M81 84l5 5 9-10" fill="none" stroke="#16140d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ot">Preciso comprar os óculos aqui?</span><span class="oa" aria-hidden="true">›</span></button>
+          <button class="opt" data-open="q-opto"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="qo-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient><linearGradient id="qo-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient>
+<radialGradient id="qo-l" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#ffffff" stop-opacity=".6"/><stop offset="1" stop-color="#9fc3dc" stop-opacity=".25"/></radialGradient>
+<linearGradient id="qo-m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9d6cf"/><stop offset=".5" stop-color="#8d8a82"/><stop offset="1" stop-color="#4b4842"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#qo-bg)"/>
+<ellipse cx="60" cy="96" rx="46" ry="5" fill="#000" opacity=".55"/>
+<path d="M14 54L4 48M106 54L116 48" stroke="url(#qo-m)" stroke-width="4" stroke-linecap="round"/>
+<circle cx="36" cy="56" r="20" fill="url(#qo-m)"/><circle cx="84" cy="56" r="20" fill="url(#qo-m)"/>
+<circle cx="36" cy="56" r="14" fill="url(#qo-l)" stroke="#2a2822" stroke-width="2"/><circle cx="84" cy="56" r="14" fill="url(#qo-l)" stroke="#2a2822" stroke-width="2"/>
+<g stroke="#16140d" stroke-width="1.2"><line x1="21.0" y1="56.0" x2="17.0" y2="56.0"/><line x1="21.9" y1="50.9" x2="18.1" y2="49.5"/><line x1="24.5" y1="46.4" x2="21.4" y2="43.8"/><line x1="28.5" y1="43.0" x2="26.5" y2="39.5"/><line x1="33.4" y1="41.2" x2="32.7" y2="37.3"/><line x1="38.6" y1="41.2" x2="39.3" y2="37.3"/><line x1="43.5" y1="43.0" x2="45.5" y2="39.5"/><line x1="47.5" y1="46.4" x2="50.6" y2="43.8"/><line x1="50.1" y1="50.9" x2="53.9" y2="49.5"/><line x1="51.0" y1="56.0" x2="55.0" y2="56.0"/><line x1="69.0" y1="56.0" x2="65.0" y2="56.0"/><line x1="69.9" y1="50.9" x2="66.1" y2="49.5"/><line x1="72.5" y1="46.4" x2="69.4" y2="43.8"/><line x1="76.5" y1="43.0" x2="74.5" y2="39.5"/><line x1="81.4" y1="41.2" x2="80.7" y2="37.3"/><line x1="86.6" y1="41.2" x2="87.3" y2="37.3"/><line x1="91.5" y1="43.0" x2="93.5" y2="39.5"/><line x1="95.5" y1="46.4" x2="98.6" y2="43.8"/><line x1="98.1" y1="50.9" x2="101.9" y2="49.5"/><line x1="99.0" y1="56.0" x2="103.0" y2="56.0"/></g>
+<path d="M56 54Q60 48 64 54" fill="none" stroke="url(#qo-m)" stroke-width="5" stroke-linecap="round"/>
+<path d="M27 50Q30 45 36 44M75 50Q78 45 84 44" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+<rect x="30" y="80" width="12" height="7" rx="2" fill="url(#qo-g)"/><rect x="78" y="80" width="12" height="7" rx="2" fill="url(#qo-g)"/></svg></span><span class="ot">Optometrista pode fazer exame?</span><span class="oa" aria-hidden="true">›</span></button>
+          <button class="opt" data-open="q-onde"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="qn-bg" cx=".5" cy=".3" r=".85"><stop offset="0" stop-color="#fffaf0"/><stop offset=".55" stop-color="#efe3c4"/><stop offset="1" stop-color="#c9a654"/></radialGradient><linearGradient id="qn-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient>
+<linearGradient id="qn-sea" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9fd0e6"/><stop offset="1" stop-color="#cfe8f0"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#qn-bg)"/>
+<path d="M0 0H120V30Q90 38 70 26Q48 14 0 30Z" fill="url(#qn-sea)" opacity=".85"/>
+<g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".9"><path d="M-4 70Q40 60 60 74T124 66"/><path d="M40 120Q46 80 60 74Q76 60 78 30"/><path d="M90 120Q88 96 104 84"/></g>
+<g fill="none" stroke="#c9a654" stroke-width="1.2" opacity=".6"><path d="M-4 70Q40 60 60 74T124 66"/><path d="M40 120Q46 80 60 74Q76 60 78 30"/></g>
+<rect x="12" y="84" width="14" height="10" rx="2" fill="#d7c79f"/><rect x="96" y="44" width="12" height="12" rx="2" fill="#d7c79f"/>
+<ellipse cx="62" cy="76" rx="12" ry="3.5" fill="#5a4206" opacity=".3"/>
+<path d="M48 46a14 14 0 1 1 28 0c0 11-14 28-14 28S48 57 48 46z" fill="url(#qn-g)"/>
+<circle cx="62" cy="46" r="5.5" fill="#16140d"/><path d="M53 40Q55 34 61 33" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" opacity=".8"/></svg></span><span class="ot">Onde vocês atendem?</span><span class="oa" aria-hidden="true">›</span></button>
+          <button class="opt" data-open="q-quando"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="qq-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient><linearGradient id="qq-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient><linearGradient id="qq-p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8e1cf"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#qq-bg)"/>
+<ellipse cx="60" cy="102" rx="40" ry="5" fill="#000" opacity=".55"/>
+<rect x="24" y="26" width="72" height="72" rx="10" fill="url(#qq-p)"/>
+<path d="M24 36Q24 26 34 26H86Q96 26 96 36V44H24Z" fill="url(#qq-g)"/>
+<rect x="38" y="18" width="5" height="14" rx="2.5" fill="#3a3428"/><rect x="77" y="18" width="5" height="14" rx="2.5" fill="#3a3428"/>
+<text x="60" y="76" text-anchor="middle" font-family="Unbounded,Arial Black,sans-serif" font-weight="800" font-size="26" fill="#16140d">1x</text>
+<text x="60" y="90" text-anchor="middle" font-family="Manrope,Arial,sans-serif" font-weight="800" font-size="9.5" letter-spacing="2" fill="#8a7a50">POR ANO</text>
+<path d="M28 30Q30 28 34 28" stroke="#fff" stroke-width="2" opacity=".7" fill="none"/></svg></span><span class="ot">Quando fazer o exame?</span><span class="oa" aria-hidden="true">›</span></button>
+          <button class="opt" data-open="q-empresa"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="qe-bg" cx=".5" cy=".3" r=".85"><stop offset="0" stop-color="#fffaf0"/><stop offset=".55" stop-color="#efe3c4"/><stop offset="1" stop-color="#c9a654"/></radialGradient><linearGradient id="qe-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient><linearGradient id="qe-p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8e1cf"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#qe-bg)"/>
+<path d="M44 0L56 30M76 0L64 30" stroke="#16140d" stroke-width="6"/>
+<rect x="52" y="26" width="16" height="10" rx="3" fill="url(#qe-g)"/>
+<ellipse cx="60" cy="104" rx="30" ry="4" fill="#5a4206" opacity=".3"/>
+<rect x="34" y="34" width="52" height="66" rx="8" fill="url(#qe-p)" stroke="#d8ccae"/>
+<rect x="34" y="34" width="52" height="16" rx="8" fill="#16140d"/><rect x="34" y="44" width="52" height="6" fill="#16140d"/>
+<rect x="42" y="40" width="20" height="4" rx="2" fill="url(#qe-g)"/>
+<circle cx="60" cy="66" r="11" fill="#efe6d2"/><path d="M48 66Q60 56 72 66Q60 76 48 66Z" fill="#fff" stroke="#16140d" stroke-width="1.6"/><circle cx="60" cy="66" r="4" fill="url(#qe-g)"/><circle cx="60" cy="66" r="1.8" fill="#16140d"/>
+<path d="M44 84H76M48 91H72" stroke="#b7ad96" stroke-width="2.4" stroke-linecap="round"/></svg></span><span class="ot">Como funciona na empresa?</span><span class="oa" aria-hidden="true">›</span></button>
+        </div>
+    </div>
+  </section>
+
+  <!-- Do exame aos óculos -->
+  <section class="journey view" id="jornada" hidden>
+    <div class="wrap">
+      <div class="j-card">
+        <p class="j-title"><span></span>Do exame aos óculos<span></span></p>
+        <ol class="j-steps">
+          <li><span class="j-dot"><svg><use href="#i-eye"/></svg></span><b>Exame</b><small>Mede o grau</small></li>
+          <li><span class="j-dot"><svg><use href="#i-doc"/></svg></span><b>Receita</b><small>É sua</small></li>
+          <li><span class="j-dot"><svg><use href="#i-glasses"/></svg></span><b>Óculos</b><small>Se você quiser</small></li>
+        </ol>
+        <p class="j-note">Doenças dos olhos são encaminhadas ao oftalmologista.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Empresas -->
+  <section class="band dark view" id="empresas" hidden>
+    <div class="wrap">
+      <h2 class="sec-title">Saúde Visual nas Empresas</h2>
+      <p class="sub">O exame vai até o seu time.</p>
+      <div class="accs light-accs">
+        <details class="acc">
+          <summary><span class="ai thumb"><svg viewBox="0 0 120 120" aria-hidden="true"><defs>
+<linearGradient id="eb-bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1c2236"/><stop offset=".75" stop-color="#3a2d22"/><stop offset="1" stop-color="#14100a"/></linearGradient>
+<linearGradient id="eb-glass" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#3c4a66"/><stop offset=".5" stop-color="#1f2638"/><stop offset="1" stop-color="#11151f"/></linearGradient><linearGradient id="eb-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#eb-bg)"/>
+<ellipse cx="60" cy="104" rx="48" ry="5" fill="#000" opacity=".55"/>
+<rect x="14" y="58" width="20" height="44" fill="#1a1f2c"/><rect x="86" y="50" width="22" height="52" fill="#1a1f2c"/>
+<g fill="#ffd76a" opacity=".7"><rect x="18" y="64" width="4" height="4"/><rect x="26" y="72" width="4" height="4"/><rect x="90" y="58" width="4" height="4"/><rect x="99" y="70" width="4" height="4"/></g>
+<rect x="32" y="22" width="56" height="80" fill="url(#eb-glass)"/><rect x="38" y="34" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="38" y="45" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="38" y="56" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="38" y="67" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="38" y="78" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="49" y="34" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="49" y="45" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="49" y="56" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="49" y="67" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="49" y="78" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="60" y="34" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="60" y="45" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="60" y="56" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="60" y="67" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="60" y="78" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="71" y="34" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="71" y="45" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="71" y="56" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/><rect x="71" y="67" width="7" height="6" rx="1" fill="#2b3550" opacity=".9"/><rect x="71" y="78" width="7" height="6" rx="1" fill="#ffd76a" opacity=".95"/>
+<path d="M32 22H88" stroke="url(#eb-g)" stroke-width="3"/><path d="M33 23L33 101" stroke="#fff" stroke-opacity=".2"/>
+<rect x="52" y="90" width="16" height="12" fill="#ffd76a" opacity=".85"/><path d="M60 90V102" stroke="#c9970a"/></svg></span><span class="at">Como funciona<small>4 etapas</small></span><span class="chev" aria-hidden="true"></span></summary>
+          <div class="opts">
+            <div class="opt static"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="ec-bg" cx=".5" cy=".3" r=".85"><stop offset="0" stop-color="#fffaf0"/><stop offset=".55" stop-color="#efe3c4"/><stop offset="1" stop-color="#c9a654"/></radialGradient><linearGradient id="ec-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient><linearGradient id="ec-d" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a3428"/><stop offset="1" stop-color="#16140d"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#ec-bg)"/><ellipse cx="60" cy="102" rx="40" ry="4" fill="#5a4206" opacity=".3"/>
+<path d="M18 26H70Q80 26 80 36V58Q80 68 70 68H40L28 80V68H18Q8 68 8 58V36Q8 26 18 26Z" fill="url(#ec-d)"/>
+<g fill="#f2c230"><circle cx="30" cy="47" r="4"/><circle cx="44" cy="47" r="4"/><circle cx="58" cy="47" r="4"/></g>
+<path d="M50 50H102Q112 50 112 60V78Q112 88 102 88H94V98L84 88H50Q40 88 40 78V60Q40 50 50 50Z" fill="url(#ec-g)"/>
+<path d="M52 54H100Q108 54 109 62Q80 68 44 62Q44 54 52 54Z" fill="#fff" opacity=".35"/>
+<path d="M58 70h36M58 78h24" stroke="#16140d" stroke-width="3.4" stroke-linecap="round"/></svg></span><span class="ot">1. Conversa<small>Com o RH</small></span></div>
+            <div class="opt static"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="ed-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient><linearGradient id="ed-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient><linearGradient id="ed-p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8e1cf"/></linearGradient></defs><rect width="120" height="120" fill="url(#ed-bg)"/><ellipse cx="60" cy="102" rx="40" ry="5" fill="#000" opacity=".55"/>
+<rect x="22" y="26" width="76" height="72" rx="10" fill="url(#ed-p)"/><path d="M22 36Q22 26 32 26H88Q98 26 98 36V44H22Z" fill="url(#ed-g)"/>
+<rect x="38" y="18" width="5" height="14" rx="2.5" fill="#3a3428"/><rect x="77" y="18" width="5" height="14" rx="2.5" fill="#3a3428"/><rect x="30" y="52" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="43" y="52" width="9" height="8" rx="2" fill="url(#ed-g)"/><rect x="56" y="52" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="69" y="52" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="82" y="52" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="30" y="64" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="43" y="64" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="56" y="64" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="69" y="64" width="9" height="8" rx="2" fill="url(#ed-g)"/><rect x="82" y="64" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="30" y="76" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="43" y="76" width="9" height="8" rx="2" fill="url(#ed-g)"/><rect x="56" y="76" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="69" y="76" width="9" height="8" rx="2" fill="#e4dcc8"/></svg></span><span class="ot">2. Data<small>Um dia no seu espaço</small></span></div>
+            <div class="opt static"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="ee-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient>
+<radialGradient id="ee-s" cx=".5" cy=".45" r=".6"><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#d6ccb6"/></radialGradient>
+<radialGradient id="ee-i" cx=".5" cy=".5" r=".5"><stop offset=".35" stop-color="#f4c24a"/><stop offset=".65" stop-color="#a8700f"/><stop offset="1" stop-color="#2a1b07"/></radialGradient>
+<clipPath id="ee-c"><path d="M16 60Q60 24 104 60Q60 96 16 60Z"/></clipPath></defs>
+<rect width="120" height="120" fill="url(#ee-bg)"/>
+<path d="M16 60Q60 24 104 60Q60 96 16 60Z" fill="url(#ee-s)"/>
+<g clip-path="url(#ee-c)"><circle cx="60" cy="60" r="21" fill="url(#ee-i)"/><g stroke="#3a2306" stroke-opacity=".35" stroke-width=".7"><line x1="69.0" y1="60.0" x2="81.0" y2="61.0"/><line x1="68.9" y1="61.3" x2="80.6" y2="64.0"/><line x1="68.6" y1="62.5" x2="79.8" y2="66.9"/><line x1="68.2" y1="63.7" x2="78.6" y2="69.7"/><line x1="67.6" y1="64.9" x2="77.1" y2="72.2"/><line x1="66.8" y1="65.9" x2="75.2" y2="74.5"/><line x1="65.9" y1="66.8" x2="72.9" y2="76.5"/><line x1="64.9" y1="67.6" x2="70.5" y2="78.2"/><line x1="63.7" y1="68.2" x2="67.8" y2="79.5"/><line x1="62.5" y1="68.6" x2="64.9" y2="80.4"/><line x1="61.3" y1="68.9" x2="61.9" y2="80.9"/><line x1="60.0" y1="69.0" x2="59.0" y2="81.0"/><line x1="58.7" y1="68.9" x2="56.0" y2="80.6"/><line x1="57.5" y1="68.6" x2="53.1" y2="79.8"/><line x1="56.3" y1="68.2" x2="50.3" y2="78.6"/><line x1="55.1" y1="67.6" x2="47.8" y2="77.1"/><line x1="54.1" y1="66.8" x2="45.5" y2="75.2"/><line x1="53.2" y1="65.9" x2="43.5" y2="72.9"/><line x1="52.4" y1="64.9" x2="41.8" y2="70.5"/><line x1="51.8" y1="63.7" x2="40.5" y2="67.8"/><line x1="51.4" y1="62.5" x2="39.6" y2="64.9"/><line x1="51.1" y1="61.3" x2="39.1" y2="61.9"/><line x1="51.0" y1="60.0" x2="39.0" y2="59.0"/><line x1="51.1" y1="58.7" x2="39.4" y2="56.0"/><line x1="51.4" y1="57.5" x2="40.2" y2="53.1"/><line x1="51.8" y1="56.3" x2="41.4" y2="50.3"/><line x1="52.4" y1="55.1" x2="42.9" y2="47.8"/><line x1="53.2" y1="54.1" x2="44.8" y2="45.5"/><line x1="54.1" y1="53.2" x2="47.1" y2="43.5"/><line x1="55.1" y1="52.4" x2="49.5" y2="41.8"/><line x1="56.3" y1="51.8" x2="52.2" y2="40.5"/><line x1="57.5" y1="51.4" x2="55.1" y2="39.6"/><line x1="58.7" y1="51.1" x2="58.1" y2="39.1"/><line x1="60.0" y1="51.0" x2="61.0" y2="39.0"/><line x1="61.3" y1="51.1" x2="64.0" y2="39.4"/><line x1="62.5" y1="51.4" x2="66.9" y2="40.2"/><line x1="63.7" y1="51.8" x2="69.7" y2="41.4"/><line x1="64.9" y1="52.4" x2="72.2" y2="42.9"/><line x1="65.9" y1="53.2" x2="74.5" y2="44.8"/><line x1="66.8" y1="54.1" x2="76.5" y2="47.1"/><line x1="67.6" y1="55.1" x2="78.2" y2="49.5"/><line x1="68.2" y1="56.3" x2="79.5" y2="52.2"/><line x1="68.6" y1="57.5" x2="80.4" y2="55.1"/><line x1="68.9" y1="58.7" x2="80.9" y2="58.1"/></g><circle cx="60" cy="60" r="9" fill="#0b0906"/><path d="M16 60Q60 24 104 60" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="9"/></g>
+<ellipse cx="53" cy="52" rx="4.5" ry="3.6" fill="#fff" opacity=".92"/>
+<g fill="none" stroke="#f2c230" stroke-width="1.3" opacity=".9"><circle cx="60" cy="60" r="38" stroke-dasharray="3 5"/><path d="M60 14V26M60 94V106M14 60H22M98 60H106"/></g></svg></span><span class="ot">3. Exame<small>Receita para cada colaborador</small></span></div>
+            <div class="opt static"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="ex-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient><linearGradient id="ex-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient><linearGradient id="ex-t" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f3ead6"/><stop offset="1" stop-color="#cbbd9c"/></linearGradient><linearGradient id="ex-s" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#d9cdb0"/><stop offset="1" stop-color="#a99a78"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#ex-bg)"/><ellipse cx="60" cy="100" rx="44" ry="5" fill="#000" opacity=".55"/>
+<path d="M60 26L100 42L60 58L20 42Z" fill="url(#ex-t)"/><path d="M20 42L60 58V98L20 82Z" fill="url(#ex-s)"/><path d="M100 42L60 58V98L100 82Z" fill="#8f8062"/>
+<path d="M40 34L80 50V60L40 44Z" fill="url(#ex-g)" opacity=".95"/><path d="M80 50V90" stroke="#c9970a" stroke-width="7" opacity=".9"/>
+<path d="M52 30Q60 18 66 30Q72 20 76 32" fill="none" stroke="url(#ex-g)" stroke-width="4" stroke-linecap="round"/></svg></span><span class="ot">4. Entrega<small>Na própria empresa</small></span></div>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><span class="ai thumb"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="es-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient><linearGradient id="es-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient></defs><rect width="120" height="120" fill="url(#es-bg)"/><ellipse cx="60" cy="102" rx="34" ry="5" fill="#000" opacity=".55"/>
+<path d="M60 14L96 28V56Q96 82 60 98Q24 82 24 56V28Z" fill="url(#es-g)"/><path d="M60 22L88 33V56Q88 76 60 89Q32 76 32 56V33Z" fill="#16140d"/>
+<path d="M46 56l10 10 18-20" fill="none" stroke="#f2c230" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M30 30Q44 22 58 20" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" opacity=".7"/></svg></span><span class="at">Compromissos<small>4 garantias</small></span><span class="chev" aria-hidden="true"></span></summary>
+          <div class="opts">
+            <div class="opt static"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="e0-bg" cx=".5" cy=".3" r=".85"><stop offset="0" stop-color="#fffaf0"/><stop offset=".55" stop-color="#efe3c4"/><stop offset="1" stop-color="#c9a654"/></radialGradient><linearGradient id="e0-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient></defs><rect width="120" height="120" fill="url(#e0-bg)"/><ellipse cx="60" cy="100" rx="34" ry="5" fill="#5a4206" opacity=".3"/>
+<ellipse cx="60" cy="62" rx="34" ry="34" fill="#b98a08"/><circle cx="60" cy="58" r="34" fill="url(#e0-g)"/><circle cx="60" cy="58" r="26" fill="none" stroke="#c9970a" stroke-width="2"/>
+<text x="60" y="70" text-anchor="middle" font-family="Unbounded,Arial Black,sans-serif" font-weight="800" font-size="34" fill="#16140d">0</text>
+<path d="M36 40Q44 28 58 26" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".75"/></svg></span><span class="ot">Sem custo<small>Para empresa e equipe</small></span></div>
+            <div class="opt static"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="el-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient><linearGradient id="el-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient></defs><rect width="120" height="120" fill="url(#el-bg)"/><ellipse cx="60" cy="100" rx="32" ry="5" fill="#000" opacity=".55"/>
+<path d="M44 82L36 106L48 100L54 110L60 86ZM76 82L84 106L72 100L66 110L60 86Z" fill="#9c7a08"/>
+<polygon points="94.0,58.0 88.0,65.5 89.4,75.0 80.5,78.5 77.0,87.4 67.5,86.0 60.0,92.0 52.5,86.0 43.0,87.4 39.5,78.5 30.6,75.0 32.0,65.5 26.0,58.0 32.0,50.5 30.6,41.0 39.5,37.5 43.0,28.6 52.5,30.0 60.0,24.0 67.5,30.0 77.0,28.6 80.5,37.5 89.4,41.0 88.0,50.5" fill="url(#el-g)"/><circle cx="60" cy="58" r="22" fill="#16140d"/>
+<path d="M50 58l7 7 14-15" fill="none" stroke="#f2c230" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ot">Participação livre<small>Exame não depende de compra</small></span></div>
+            <div class="opt static"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="ef-bg" cx=".5" cy=".3" r=".85"><stop offset="0" stop-color="#fffaf0"/><stop offset=".55" stop-color="#efe3c4"/><stop offset="1" stop-color="#c9a654"/></radialGradient><linearGradient id="ef-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient><linearGradient id="ef-k" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#e6dcc4"/><stop offset=".5" stop-color="#fffaf0"/><stop offset="1" stop-color="#cbbd9c"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#ef-bg)"/><ellipse cx="60" cy="104" rx="36" ry="5" fill="#5a4206" opacity=".3"/>
+<path d="M34 30Q60 22 86 30L90 100Q60 106 30 100Z" fill="url(#ef-k)"/><path d="M34 30Q60 22 86 30L84 38Q60 32 36 38Z" fill="#d8ccae"/>
+<rect x="38" y="52" width="44" height="30" rx="4" fill="url(#ef-g)"/>
+<text x="60" y="74" text-anchor="middle" font-family="Unbounded,Arial Black,sans-serif" font-weight="800" font-size="16" fill="#16140d">1kg</text>
+<path d="M60 40c-6 4-6 10 0 12 6-2 6-8 0-12z" fill="#7aa35a"/></svg></span><span class="ot">1 kg de alimento<small>Doação opcional</small></span></div>
+            <div class="opt static"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="ek-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient><linearGradient id="ek-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient></defs><rect width="120" height="120" fill="url(#ek-bg)"/><ellipse cx="60" cy="102" rx="36" ry="5" fill="#000" opacity=".55"/>
+<path d="M40 52V40a20 20 0 0 1 40 0v12" fill="none" stroke="#bdb7a8" stroke-width="8"/><path d="M40 52V40a20 20 0 0 1 40 0" fill="none" stroke="#fff" stroke-width="2" opacity=".5"/>
+<rect x="28" y="50" width="64" height="48" rx="10" fill="url(#ek-g)"/><path d="M32 56H88" stroke="#fff" stroke-width="2.4" opacity=".55"/>
+<circle cx="60" cy="70" r="6" fill="#16140d"/><path d="M58 74h4l1 12h-6z" fill="#16140d"/></svg></span><span class="ot">Dados protegidos<small>RH recebe só números gerais</small></span></div>
+          </div>
+        </details>
+      </div>
+      <div class="row-btns">
+        <a class="btn btn-gold" data-wa="Olá! Gostaria de conhecer a ação Saúde Visual nas Empresas. Empresa: " href="#contato">Levar para minha empresa</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Óticas -->
+  <section class="band light view" id="oticas" hidden>
+    <div class="wrap">
+      <h2 class="sec-title">Para óticas</h2>
+      <p class="sub">Optometrista na sua loja, em dias fixos.</p>
+      <div class="accs light-accs">
+        <details class="acc">
+          <summary><span class="ai thumb"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="os-bg" cx=".5" cy=".3" r=".85"><stop offset="0" stop-color="#fffaf0"/><stop offset=".55" stop-color="#efe3c4"/><stop offset="1" stop-color="#c9a654"/></radialGradient><linearGradient id="os-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient>
+<linearGradient id="os-wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a261c"/><stop offset="1" stop-color="#121008"/></linearGradient>
+<linearGradient id="os-win" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff8e4"/><stop offset="1" stop-color="#e6d6a8"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#os-bg)"/>
+<ellipse cx="60" cy="102" rx="48" ry="5" fill="#5a4206" opacity=".3"/>
+<rect x="16" y="34" width="88" height="66" rx="3" fill="url(#os-wall)"/>
+<path d="M12 34H108L102 50H18Z" fill="url(#os-g)"/>
+<g fill="#16140d" opacity=".85"><path d="M24 34L22 50H30L32 34Z"/><path d="M44 34L43 50H51L52 34Z"/><path d="M64 34L65 50H73L72 34Z"/><path d="M84 34L86 50H94L92 34Z"/></g>
+<path d="M18 50Q22 56 26 50Q30 56 34 50Q38 56 42 50Q46 56 50 50Q54 56 58 50Q62 56 66 50Q70 56 74 50Q78 56 82 50Q86 56 90 50Q94 56 98 50Q100 54 102 50" fill="url(#os-g)"/>
+<rect x="24" y="60" width="48" height="32" rx="2" fill="url(#os-win)"/>
+<g fill="none" stroke="#16140d" stroke-width="2.4"><rect x="30" y="72" width="14" height="10" rx="4"/><rect x="50" y="72" width="14" height="10" rx="4"/><path d="M44 76Q47 73 50 76"/></g>
+<path d="M28 88H68" stroke="#c9a654" stroke-width="1.5"/>
+<rect x="80" y="62" width="16" height="38" rx="2" fill="#3a3428"/><circle cx="92" cy="82" r="1.4" fill="url(#os-g)"/>
+<path d="M26 62L40 62L30 90" fill="#fff" opacity=".35"/></svg></span><span class="at">Como funciona<small>3 pontos</small></span><span class="chev" aria-hidden="true"></span></summary>
+          <div class="opts">
+            <div class="opt static"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="oc-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient><linearGradient id="oc-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient><linearGradient id="oc-p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8e1cf"/></linearGradient></defs><rect width="120" height="120" fill="url(#oc-bg)"/><ellipse cx="60" cy="102" rx="40" ry="5" fill="#000" opacity=".55"/>
+<rect x="22" y="26" width="76" height="72" rx="10" fill="url(#oc-p)"/><path d="M22 36Q22 26 32 26H88Q98 26 98 36V44H22Z" fill="url(#oc-g)"/>
+<rect x="38" y="18" width="5" height="14" rx="2.5" fill="#3a3428"/><rect x="77" y="18" width="5" height="14" rx="2.5" fill="#3a3428"/><rect x="30" y="52" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="43" y="52" width="9" height="8" rx="2" fill="url(#oc-g)"/><rect x="56" y="52" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="69" y="52" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="82" y="52" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="30" y="64" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="43" y="64" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="56" y="64" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="69" y="64" width="9" height="8" rx="2" fill="url(#oc-g)"/><rect x="82" y="64" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="30" y="76" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="43" y="76" width="9" height="8" rx="2" fill="url(#oc-g)"/><rect x="56" y="76" width="9" height="8" rx="2" fill="#e4dcc8"/><rect x="69" y="76" width="9" height="8" rx="2" fill="#e4dcc8"/></svg></span><span class="ot">Agenda fixa<small>Semanal ou quinzenal</small></span></div>
+            <div class="opt static"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="oo-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient><linearGradient id="oo-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient>
+<radialGradient id="oo-l" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="#ffffff" stop-opacity=".6"/><stop offset="1" stop-color="#9fc3dc" stop-opacity=".25"/></radialGradient>
+<linearGradient id="oo-m" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d9d6cf"/><stop offset=".5" stop-color="#8d8a82"/><stop offset="1" stop-color="#4b4842"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#oo-bg)"/>
+<ellipse cx="60" cy="96" rx="46" ry="5" fill="#000" opacity=".55"/>
+<path d="M14 54L4 48M106 54L116 48" stroke="url(#oo-m)" stroke-width="4" stroke-linecap="round"/>
+<circle cx="36" cy="56" r="20" fill="url(#oo-m)"/><circle cx="84" cy="56" r="20" fill="url(#oo-m)"/>
+<circle cx="36" cy="56" r="14" fill="url(#oo-l)" stroke="#2a2822" stroke-width="2"/><circle cx="84" cy="56" r="14" fill="url(#oo-l)" stroke="#2a2822" stroke-width="2"/>
+<g stroke="#16140d" stroke-width="1.2"><line x1="21.0" y1="56.0" x2="17.0" y2="56.0"/><line x1="21.9" y1="50.9" x2="18.1" y2="49.5"/><line x1="24.5" y1="46.4" x2="21.4" y2="43.8"/><line x1="28.5" y1="43.0" x2="26.5" y2="39.5"/><line x1="33.4" y1="41.2" x2="32.7" y2="37.3"/><line x1="38.6" y1="41.2" x2="39.3" y2="37.3"/><line x1="43.5" y1="43.0" x2="45.5" y2="39.5"/><line x1="47.5" y1="46.4" x2="50.6" y2="43.8"/><line x1="50.1" y1="50.9" x2="53.9" y2="49.5"/><line x1="51.0" y1="56.0" x2="55.0" y2="56.0"/><line x1="69.0" y1="56.0" x2="65.0" y2="56.0"/><line x1="69.9" y1="50.9" x2="66.1" y2="49.5"/><line x1="72.5" y1="46.4" x2="69.4" y2="43.8"/><line x1="76.5" y1="43.0" x2="74.5" y2="39.5"/><line x1="81.4" y1="41.2" x2="80.7" y2="37.3"/><line x1="86.6" y1="41.2" x2="87.3" y2="37.3"/><line x1="91.5" y1="43.0" x2="93.5" y2="39.5"/><line x1="95.5" y1="46.4" x2="98.6" y2="43.8"/><line x1="98.1" y1="50.9" x2="101.9" y2="49.5"/><line x1="99.0" y1="56.0" x2="103.0" y2="56.0"/></g>
+<path d="M56 54Q60 48 64 54" fill="none" stroke="url(#oo-m)" stroke-width="5" stroke-linecap="round"/>
+<path d="M27 50Q30 45 36 44M75 50Q78 45 84 44" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" opacity=".8"/>
+<rect x="30" y="80" width="12" height="7" rx="2" fill="url(#oo-g)"/><rect x="78" y="80" width="12" height="7" rx="2" fill="url(#oo-g)"/></svg></span><span class="ot">Sala separada da venda<small>Exame em espaço próprio</small></span></div>
+            <div class="opt static"><span class="oi photo"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="or-bg" cx=".35" cy=".25" r=".9"><stop offset="0" stop-color="#3b3324"/><stop offset=".6" stop-color="#1a170f"/><stop offset="1" stop-color="#0c0b07"/></radialGradient><linearGradient id="or-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient><linearGradient id="or-p" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#e8e1cf"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#or-bg)"/>
+<ellipse cx="60" cy="102" rx="38" ry="5" fill="#000" opacity=".5"/>
+<g transform="rotate(-6 60 60)"><rect x="30" y="18" width="60" height="80" rx="4" fill="url(#or-p)"/>
+<rect x="30" y="18" width="60" height="12" rx="4" fill="#16140d"/><rect x="36" y="22" width="22" height="4" rx="2" fill="url(#or-g)"/>
+<g stroke="#b7ad96" stroke-width="2.4" stroke-linecap="round"><path d="M38 40H82M38 48H74M38 56H80M38 64H66"/></g>
+<g font-family="Manrope,Arial,sans-serif" font-weight="800" font-size="8" fill="#16140d"><text x="38" y="80">OD</text><text x="38" y="90">OE</text></g>
+<path d="M52 78H72M52 88H70" stroke="#16140d" stroke-width="2" stroke-linecap="round"/></g>
+<circle cx="88" cy="84" r="14" fill="url(#or-g)"/><path d="M81 84l5 5 9-10" fill="none" stroke="#16140d" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="ot">Receita sempre ao paciente<small>Em todos os atendimentos</small></span></div>
+          </div>
+        </details>
+        <details class="acc">
+          <summary><span class="ai thumb"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><radialGradient id="on-bg" cx=".5" cy=".3" r=".85"><stop offset="0" stop-color="#fffaf0"/><stop offset=".55" stop-color="#efe3c4"/><stop offset="1" stop-color="#c9a654"/></radialGradient><linearGradient id="on-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffe9a3"/><stop offset=".55" stop-color="#f2c230"/><stop offset="1" stop-color="#b98a08"/></linearGradient>
+<linearGradient id="on-sea" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9fd0e6"/><stop offset="1" stop-color="#cfe8f0"/></linearGradient></defs>
+<rect width="120" height="120" fill="url(#on-bg)"/>
+<path d="M0 0H120V30Q90 38 70 26Q48 14 0 30Z" fill="url(#on-sea)" opacity=".85"/>
+<g fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" opacity=".9"><path d="M-4 70Q40 60 60 74T124 66"/><path d="M40 120Q46 80 60 74Q76 60 78 30"/><path d="M90 120Q88 96 104 84"/></g>
+<g fill="none" stroke="#c9a654" stroke-width="1.2" opacity=".6"><path d="M-4 70Q40 60 60 74T124 66"/><path d="M40 120Q46 80 60 74Q76 60 78 30"/></g>
+<rect x="12" y="84" width="14" height="10" rx="2" fill="#d7c79f"/><rect x="96" y="44" width="12" height="12" rx="2" fill="#d7c79f"/>
+<ellipse cx="62" cy="76" rx="12" ry="3.5" fill="#5a4206" opacity=".3"/>
+<path d="M48 46a14 14 0 1 1 28 0c0 11-14 28-14 28S48 57 48 46z" fill="url(#on-g)"/>
+<circle cx="62" cy="46" r="5.5" fill="#16140d"/><path d="M53 40Q55 34 61 33" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" opacity=".8"/></svg></span><span class="at">Cidades atendidas<small>14 cidades</small></span><span class="chev" aria-hidden="true"></span></summary>
+          <div class="opts one"><div class="cities"><span>Fortaleza</span><span>Caucaia</span><span>Maracanaú</span><span>Pecém</span><span>Paracuru</span><span>São Gonçalo do Amarante</span><span>Pindoretama</span><span>Cascavel</span><span>Beberibe</span><span>Aracati</span><span>Horizonte</span><span>Pacatuba</span><span>Itaitinga</span><span>Aquiraz</span></div></div>
+        </details>
+      </div>
+      <div class="row-btns">
+        <a class="btn btn-ink" data-wa="Olá! Tenho uma ótica e gostaria de conversar sobre parceria." href="#contato"><svg class="wa-i"><use href="#i-wa"/></svg>Conversar sobre parceria</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="band dark view" id="contato" hidden>
+    <div class="wrap contact-card">
+      <h2 class="sec-title">Fale com a gente</h2>
+      <p class="sub">A conversa abre no WhatsApp.</p>
+      <a class="btn btn-gold big-wa" data-wa="Olá! Vim pelo site da Fortal Óculos." href="#contato"><svg><use href="#i-wa"/></svg>Abrir WhatsApp</a>
+      <p class="small"><span id="waNumber">Número em configuração</span> · Fortaleza e Região Metropolitana</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong style="color:#fff">Fortal Óculos</strong> · Optometrista responsável: Waldy Filho · Registro: CBOO 06.01386-1</p>
+    <p>O exame optométrico não substitui a consulta oftalmológica para diagnóstico e tratamento de doenças oculares.</p>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa="Olá! Vim pelo site da Fortal Óculos." href="#contato" aria-label="Conversar no WhatsApp"><svg><use href="#i-wa"/></svg></a>
+
+<div class="sheet-bg" id="sheetBg" hidden>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" id="sheet"></div>
+</div>
+
+<script>
+(function(){
+  var C = {
+    exame:{icon:'eye',title:'Exame de vista',pts:[['eye','Mede o seu grau'],['doc','Receita na hora'],['screen','Orientação para telas']],
+      note:'Doença nos olhos é com o oftalmologista. Encaminhamos quando necessário.',wa:'Olá! Gostaria de informações sobre o exame de vista.'},
+    oculos:{icon:'glasses',title:'Óculos de grau',pts:[['glasses','Armações variadas'],['doc','Feitos com a sua receita'],['tool','Ajuste depois da entrega']],
+      wa:'Olá! Gostaria de informações sobre óculos de grau.'},
+    lentes:{icon:'lens',title:'Lentes',pts:[['eye','Para longe ou perto'],['layers','Multifocais'],['screen','Antirreflexo e luz azul'],['sun','Escurecem no sol']],
+      wa:'Olá! Gostaria de entender as opções de lentes.'},
+    contato:{icon:'contact',title:'Lentes de contato',pts:[['cal','Diárias, quinzenais ou mensais'],['eye','Opções para astigmatismo'],['box','Reposição com lembrete, se você autorizar']],
+      wa:'Olá! Gostaria de informações sobre lentes de contato.'},
+    adapt:{icon:'contact',title:'Adaptação de lentes de contato',pts:[['eye','Avaliação para uso de lentes'],['contact','Treino para colocar e retirar'],['cal','Acompanhamento nos primeiros dias']],
+      wa:'Olá! Gostaria de fazer a adaptação de lentes de contato.'},
+    casa:{icon:'house',title:'Atendimento em casa',pts:[['house','Exame no seu endereço'],['glasses','Armações levadas até você'],['box','Entrega em casa']],
+      note:'Fortaleza e Região Metropolitana. Disponibilidade pelo WhatsApp.',wa:'Olá! Gostaria de atendimento em casa. Meu bairro é: '},
+    kids:{icon:'kid',title:'Visão infantil',lead:'Sinais para observar:',pts:[['doc','Aproxima muito o caderno'],['eye','Aperta os olhos'],['screen','Não enxerga bem a lousa']],
+      wa:'Olá! Gostaria de informações sobre exame de vista infantil.'},
+    empresa:{icon:'building',title:'Para empresas',pts:[['check','Sem custo para empresa e equipe'],['cal','Um dia, no seu espaço'],['doc','Receita para cada colaborador'],['heart','Doação de 1 kg opcional']],
+      link:['#empresas','Ver como funciona'],wa:'Olá! Gostaria de conhecer a ação Saúde Visual nas Empresas. Empresa: '},
+    otica:{icon:'store',title:'Para óticas',pts:[['cal','Agenda fixa'],['store','Sala separada da venda'],['doc','Receita sempre ao paciente']],
+      wa:'Olá! Tenho uma ótica e gostaria de conversar sobre parceria.'},
+    'q-comprar':{icon:'doc',title:'Preciso comprar aqui?',answer:'Não. A receita é sua. Você faz os óculos onde quiser.',wa:'Olá! Tenho uma dúvida sobre a receita.'},
+    'q-opto':{icon:'eye',title:'Optometrista faz exame?',answer:'Sim. O optometrista com formação superior mede o grau e prescreve óculos e lentes de contato.',
+      note:'Doenças dos olhos são tratadas pelo oftalmologista.',wa:'Olá! Tenho uma dúvida sobre o exame.'},
+    'q-onde':{icon:'pin',title:'Onde atendemos',pts:[['pin','Fortaleza e Região Metropolitana'],['house','Em casa'],['building','Em empresas'],['store','Em óticas parceiras']],wa:'Olá! Gostaria de saber onde posso ser atendido.'},
+    'q-quando':{icon:'cal',title:'Quando fazer o exame?',answer:'Uma vez por ano, ou antes se a visão mudar.',
+      note:'Dor forte, olho vermelho com dor ou perda súbita da visão: procure um oftalmologista ou pronto-socorro na hora.',wa:'Olá! Gostaria de marcar um exame de vista.'},
+    'q-empresa':{icon:'building',title:'Na empresa',pts:[['chat','Combinamos com o RH'],['box','Levamos todo o equipamento'],['eye','Exame no local'],['lock','RH recebe só números gerais']],
+      link:['#empresas','Ver detalhes'],wa:'Olá! Gostaria de conhecer a ação Saúde Visual nas Empresas. Empresa: '}
+  };
+
+  var num=(window.FORTAL_WHATSAPP||'').replace(/\D/g,'');
+  function waUrl(t){return 'https://wa.me/'+(num||'')+'?text='+encodeURIComponent(t);}
+  function wire(root){
+    root.querySelectorAll('[data-wa]').forEach(function(a){a.href=waUrl(a.getAttribute('data-wa'));a.target='_blank';a.rel='noopener';});
+  }
+  wire(document);
+  if(num){var n=num.replace(/^55/,'');document.getElementById('waNumber').textContent='('+n.slice(0,2)+') '+n.slice(2,n.length-4)+'-'+n.slice(-4);}
+
+  var bg=document.getElementById('sheetBg'), sheet=document.getElementById('sheet'), last=null;
+  function ic(id){return '<svg><use href="#i-'+id+'"/></svg>';}
+  function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+  function open(key,trigger){
+    var d=C[key]; if(!d) return; last=trigger;
+    var h='<div class="grab"></div><div class="sheet-head"><span class="ill">'+ic(d.icon)+'</span><h3 id="sheetTitle">'+esc(d.title)+'</h3><button class="close" aria-label="Fechar">×</button></div>';
+    if(d.answer) h+='<p class="answer">'+esc(d.answer)+'</p>';
+    if(d.lead) h+='<p class="answer" style="font-size:15px;color:var(--muted)">'+esc(d.lead)+'</p>';
+    if(d.pts) h+='<ul class="points">'+d.pts.map(function(p){return '<li><i>'+ic(p[0])+'</i>'+esc(p[1])+'</li>';}).join('')+'</ul>';
+    if(d.note) h+='<p class="s-note">'+ic('alert')+'<span>'+esc(d.note)+'</span></p>';
+    h+='<a class="btn btn-ink" data-wa="'+esc(d.wa)+'" href="#contato"><svg class="wa-i"><use href="#i-wa"/></svg>Conversar no WhatsApp</a>';
+    if(d.link) h+='<a class="btn" style="margin-top:8px;border-color:var(--line);background:#fff" href="'+d.link[0]+'" data-close>'+esc(d.link[1])+'</a>';
+    sheet.innerHTML=h; wire(sheet); bg.hidden=false; document.body.style.overflow='hidden';
+    sheet.querySelector('.close').focus();
+  }
+  function close(){bg.hidden=true;document.body.style.overflow='';if(last)last.focus();}
+  document.querySelectorAll('[data-open]').forEach(function(b){b.addEventListener('click',function(){open(b.getAttribute('data-open'),b);});});
+  bg.addEventListener('click',function(e){if(e.target===bg||e.target.closest('.close')||e.target.closest('[data-close]'))close();});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!bg.hidden)close();});
+
+  // Telas e menu lateral
+  var side=document.getElementById('side'), scrim=document.getElementById('sideScrim');
+  var toggles=document.querySelectorAll('.open-menu');
+  function openMenu(){side.classList.add('open');scrim.hidden=false;toggles.forEach(function(t){t.setAttribute('aria-expanded','true')});}
+  function closeMenu(){side.classList.remove('open');scrim.hidden=true;toggles.forEach(function(t){t.setAttribute('aria-expanded','false')});}
+  toggles.forEach(function(t){t.addEventListener('click',function(){
+    if(window.matchMedia('(min-width:960px)').matches){var f=side.querySelector('[data-nav="servicos"]');if(f)f.focus();}else openMenu();
+  });});
+  side.querySelector('.side-close').addEventListener('click',closeMenu);
+  scrim.addEventListener('click',closeMenu);
+  var views=[].slice.call(document.querySelectorAll('main > .view'));
+  function show(){
+    var id=(location.hash||'#inicio').slice(1);
+    if(!views.some(function(v){return v.id===id;})) id='inicio';
+    views.forEach(function(v){v.hidden=v.id!==id;});
+    document.querySelectorAll('[data-nav]').forEach(function(a){if(a.getAttribute('data-nav')===id)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+    closeMenu(); window.scrollTo(0,0);
+  }
+  window.addEventListener('hashchange',show); show();
+})();
+</script>
+
+</body>
+</html>
